@@ -1,0 +1,99 @@
+{
+	"additionalNodes": [ {
+		"children": [],
+		"id": "xZg2UYoVRsKaWjxaJTEOhB34nlDhY5tx",
+		"nodeType": "success",
+		"parameters": []
+	}, {
+		"children": [],
+		"id": "Z7nZHjCp1HgCcYkLKbAknnBGgAg5hINj",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "msg",
+			"value": "core.MissionInfo()"
+		}, {
+			"name": "scriptName",
+			"value": "echo"
+		} ],
+		"scriptName": "echo"
+	}, {
+		"children": [],
+		"id": "zWaECoGrh7XC3fcXBaCuD57kQgpv7zJT",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "x"
+		}, {
+			"name": "value",
+			"value": "core.MissionInfo()"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	} ],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"Z7nZHjCp1HgCcYkLKbAknnBGgAg5hINj": {
+			"height": 74,
+			"title": "echo",
+			"width": 192,
+			"x": 613,
+			"y": -23
+		},
+		"rqJdn2aioaqLtAFkCD9TuDxPoTNlHBK7": {
+			"height": 132,
+			"title": "formation.moveCustomGroup",
+			"width": 269,
+			"x": 250,
+			"y": -94
+		},
+		"xZg2UYoVRsKaWjxaJTEOhB34nlDhY5tx": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 299,
+			"y": 105
+		},
+		"zWaECoGrh7XC3fcXBaCuD57kQgpv7zJT": {
+			"height": 94,
+			"title": "store",
+			"width": 198,
+			"x": 616,
+			"y": 65
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [],
+		"id": "rqJdn2aioaqLtAFkCD9TuDxPoTNlHBK7",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "groupDefintion",
+			"value": ""
+		}, {
+			"name": "position",
+			"value": ""
+		}, {
+			"name": "formation",
+			"value": "<relative formation>"
+		}, {
+			"name": "fight",
+			"value": "false"
+		}, {
+			"name": "scriptName",
+			"value": "formation.moveCustomGroup"
+		} ],
+		"scriptName": "formation.moveCustomGroup"
+	}
+}

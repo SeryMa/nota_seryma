@@ -1,0 +1,41 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 281
+		}
+	},
+	"inputs": [ {
+		"command": "BETS_UNIT",
+		"name": "Commander"
+	} ],
+	"outputs": [],
+	"properties": {
+		"9zvhe3zDohoBdgncJ60edpyRxRGsQKWW": {
+			"height": 130,
+			"title": "reference",
+			"width": 290,
+			"x": 340,
+			"y": -1
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [],
+		"id": "9zvhe3zDohoBdgncJ60edpyRxRGsQKWW",
+		"nodeType": "reference",
+		"parameters": [ {
+			"name": "behaviourName",
+			"value": "nota_seryma._follow"
+		} ],
+		"referenceInputs": [ {
+			"name": "Commander",
+			"value": "Commander[1]"
+		} ],
+		"referenceOutputs": []
+	}
+}

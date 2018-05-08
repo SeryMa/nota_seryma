@@ -1,0 +1,96 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"25U0Wmbt1AmTAA1LLlC9LQWPdx0ksgeS": {
+			"height": 94,
+			"title": "store",
+			"width": 159,
+			"x": 458,
+			"y": -43
+		},
+		"3zGc25E9KX1epadQ7Qkxi9SrjlAgwboa": {
+			"height": 54,
+			"title": "sequence",
+			"width": 143,
+			"x": 261,
+			"y": -1
+		},
+		"Hls9OKvaXSMWCaXmgJSP8lLlHcdkPsxQ": {
+			"height": 94,
+			"title": "store",
+			"width": 534,
+			"x": 459,
+			"y": 40
+		},
+		"y5mOncUyR8HqJAlTZ68GleVttt8Iusp4": {
+			"height": 90,
+			"title": "Common.relativeMove",
+			"width": 310,
+			"x": 456,
+			"y": 123
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "25U0Wmbt1AmTAA1LLlC9LQWPdx0ksgeS",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "windData"
+			}, {
+				"name": "value",
+				"value": "map.Wind()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "Hls9OKvaXSMWCaXmgJSP8lLlHcdkPsxQ",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "windVector"
+			}, {
+				"name": "value",
+				"value": "{windData.dirX * windData.strength, windData.dirZ * windData.strength}"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "y5mOncUyR8HqJAlTZ68GleVttt8Iusp4",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "dist",
+				"value": "{x = windVector[1], z = windVector[2]}"
+			}, {
+				"name": "fight",
+				"value": "true"
+			}, {
+				"name": "scriptName",
+				"value": "Common.relativeMove"
+			} ],
+			"scriptName": "Common.relativeMove"
+		} ],
+		"id": "3zGc25E9KX1epadQ7Qkxi9SrjlAgwboa",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

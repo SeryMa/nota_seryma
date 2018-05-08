@@ -1,0 +1,74 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 281
+		}
+	},
+	"inputs": [ {
+		"command": "BETS_UNIT",
+		"name": "Commander"
+	} ],
+	"outputs": [],
+	"properties": {
+		"7l9AoX053jodXbveoelFlOmfl75gYdoK": {
+			"height": 74,
+			"title": "echo",
+			"width": 402,
+			"x": 659,
+			"y": -23
+		},
+		"SM3h7s4zSsQItignhk2GZXeXsoftKnzX": {
+			"height": 90,
+			"title": "Common.move",
+			"width": 505,
+			"x": 659,
+			"y": 68
+		},
+		"ZfhEVQCTlt2MRtrozVYJyKDzrNwC65Rz": {
+			"height": 54,
+			"title": "sequence",
+			"width": 143,
+			"x": 395,
+			"y": 26
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "7l9AoX053jodXbveoelFlOmfl75gYdoK",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "msg",
+				"value": "nota_seryma.Position(Commander)"
+			}, {
+				"name": "scriptName",
+				"value": "echo"
+			} ],
+			"scriptName": "echo"
+		}, {
+			"children": [],
+			"id": "SM3h7s4zSsQItignhk2GZXeXsoftKnzX",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "pos",
+				"value": "nota_seryma.Position(Commander)"
+			}, {
+				"name": "fight",
+				"value": "true"
+			}, {
+				"name": "scriptName",
+				"value": "Common.move"
+			} ],
+			"scriptName": "Common.move"
+		} ],
+		"id": "ZfhEVQCTlt2MRtrozVYJyKDzrNwC65Rz",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

@@ -1,0 +1,164 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 216
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"Dd25b82b6J7D9s7AR9LJjNXeMF2gPgvK": {
+			"height": 110,
+			"title": "reference",
+			"width": 269,
+			"x": 690,
+			"y": -43
+		},
+		"I85V1xidKedsapVSu3aLR9dRT7sQtFa3": {
+			"height": 94,
+			"title": "store",
+			"width": 291,
+			"x": 678,
+			"y": -216
+		},
+		"IGhvTI0il5KL9XY3Nc3Gs7I3wtwngoQN": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 505,
+			"y": -129
+		},
+		"LJBksG81eTR4FP0af5EmqQwSO1xyu01r": {
+			"height": 70,
+			"title": "roleSplit",
+			"width": 202,
+			"x": 264,
+			"y": 13
+		},
+		"VcKEOHFqQPB4amC0bMtwAwRptIz67ZJv": {
+			"height": 74,
+			"title": "echo",
+			"width": 272,
+			"x": 693,
+			"y": -122
+		},
+		"f9NyrQ9coLf0tbp8OFAciHBvgZemxpMQ": {
+			"height": 151,
+			"title": "reference",
+			"width": 323,
+			"x": 745,
+			"y": 99
+		},
+		"qqsypFU24jjt5C9PzRCkdaVMxH8YPemB": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 498,
+			"y": 121
+		},
+		"ri4kA51xVDavEbBTkDw4GaT7LMr899LY": {
+			"height": 151,
+			"title": "reference",
+			"width": 323,
+			"x": 736,
+			"y": 293
+		}
+	},
+	"roles": [ {
+		"categories": [ "nota_seryma.Commander" ],
+		"name": "Commander"
+	}, {
+		"categories": [ "nota_raiders.bots" ],
+		"name": "Peons"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "I85V1xidKedsapVSu3aLR9dRT7sQtFa3",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "Commander"
+				}, {
+					"name": "value",
+					"value": "units[1]"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "VcKEOHFqQPB4amC0bMtwAwRptIz67ZJv",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "msg",
+					"value": "Commander"
+				}, {
+					"name": "scriptName",
+					"value": "echo"
+				} ],
+				"scriptName": "echo"
+			}, {
+				"children": [],
+				"id": "Dd25b82b6J7D9s7AR9LJjNXeMF2gPgvK",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_seryma.Sail"
+				} ],
+				"referenceInputs": [],
+				"referenceOutputs": []
+			} ],
+			"id": "IGhvTI0il5KL9XY3Nc3Gs7I3wtwngoQN",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "f9NyrQ9coLf0tbp8OFAciHBvgZemxpMQ",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_seryma.Follow"
+				} ],
+				"referenceInputs": [ {
+					"name": "Commander",
+					"value": "units[1]"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "ri4kA51xVDavEbBTkDw4GaT7LMr899LY",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_seryma._follow"
+				} ],
+				"referenceInputs": [ {
+					"name": "Commander",
+					"value": "Commander"
+				} ],
+				"referenceOutputs": []
+			} ],
+			"id": "qqsypFU24jjt5C9PzRCkdaVMxH8YPemB",
+			"nodeType": "luaCondition",
+			"parameters": [ {
+				"name": "expression",
+				"value": "Commander == nil"
+			}, {
+				"name": "repeat",
+				"value": "false"
+			} ]
+		} ],
+		"id": "LJBksG81eTR4FP0af5EmqQwSO1xyu01r",
+		"nodeType": "roleSplit",
+		"parameters": [ {
+			"name": "mode",
+			"value": "all-success"
+		} ]
+	}
+}
