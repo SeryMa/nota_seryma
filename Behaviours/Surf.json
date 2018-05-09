@@ -70,7 +70,7 @@
 		"categories": [ "nota_seryma.Commander" ],
 		"name": "Commander"
 	}, {
-		"categories": [ "nota_raiders.bots" ],
+		"categories": [],
 		"name": "Peons"
 	} ],
 	"root": {
