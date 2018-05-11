@@ -6,35 +6,29 @@
 			"width": 216
 		}
 	},
-	"inputs": [ {
-		"command": "BETS_POSITION",
-		"name": "input0"
-	}, {
-		"command": "BETS_POSITION",
-		"name": "input1"
-	} ],
+	"inputs": [],
 	"outputs": [],
 	"properties": {
-		"TeMRjvY0sANlIxRopFNLj7juC2fFsffS": {
-			"height": 90,
-			"title": "Common.move",
-			"width": 178,
-			"x": 566,
-			"y": -46
-		},
-		"XISYPKkJ8w2HCUgOPKVMM9t9LTeGqOWM": {
-			"height": 90,
-			"title": "Common.move",
-			"width": 178,
-			"x": 577,
+		"8djKNtOAuIVhQ08ER5CwsPpvpyZ6H6Tb": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 631,
 			"y": 57
 		},
-		"yRPi5ZtLYJ70pKxOaK8b81Buniq14gxi": {
-			"height": 60,
-			"title": "sequence",
-			"width": 143,
-			"x": 303,
-			"y": 9
+		"AHd7p8aU2w5RsEqEKZsMe7PVEMNcgUTv": {
+			"height": 94,
+			"title": "store",
+			"width": 442,
+			"x": 548,
+			"y": -114
+		},
+		"AZKLBA8KqqZbwckjepMvXOCxY5HSksWm": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 263,
+			"y": -108
 		}
 	},
 	"roles": [ {
@@ -44,37 +38,33 @@
 	"root": {
 		"children": [ {
 			"children": [],
-			"id": "TeMRjvY0sANlIxRopFNLj7juC2fFsffS",
+			"id": "AHd7p8aU2w5RsEqEKZsMe7PVEMNcgUTv",
 			"nodeType": "luaCommand",
 			"parameters": [ {
-				"name": "pos",
-				"value": "input0"
+				"name": "var",
+				"value": "hills"
 			}, {
-				"name": "fight",
-				"value": "false"
+				"name": "value",
+				"value": "nota_seryma.getHills(150,0.6)"
 			}, {
 				"name": "scriptName",
-				"value": "Common.move"
+				"value": "store"
 			} ],
-			"scriptName": "Common.move"
+			"scriptName": "store"
 		}, {
 			"children": [],
-			"id": "XISYPKkJ8w2HCUgOPKVMM9t9LTeGqOWM",
-			"nodeType": "luaCommand",
-			"parameters": [ {
-				"name": "pos",
-				"value": "input1"
-			}, {
-				"name": "fight",
-				"value": "false"
-			}, {
-				"name": "scriptName",
-				"value": "Common.move"
-			} ],
-			"scriptName": "Common.move"
+			"id": "8djKNtOAuIVhQ08ER5CwsPpvpyZ6H6Tb",
+			"nodeType": "success",
+			"parameters": []
 		} ],
-		"id": "yRPi5ZtLYJ70pKxOaK8b81Buniq14gxi",
-		"nodeType": "sequence",
-		"parameters": []
+		"id": "AZKLBA8KqqZbwckjepMvXOCxY5HSksWm",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "hills == nil"
+		}, {
+			"name": "repeat",
+			"value": "false"
+		} ]
 	}
 }

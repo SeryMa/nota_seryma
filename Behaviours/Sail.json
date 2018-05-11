@@ -26,7 +26,7 @@
 		"Hls9OKvaXSMWCaXmgJSP8lLlHcdkPsxQ": {
 			"height": 94,
 			"title": "store",
-			"width": 534,
+			"width": 592,
 			"x": 459,
 			"y": 40
 		},
@@ -67,7 +67,7 @@
 				"value": "windVector"
 			}, {
 				"name": "value",
-				"value": "{windData.dirX * windData.strength, windData.dirZ * windData.strength}"
+				"value": "{windData.dirX* windData.strength, windData.dirZ * windData.strength}"
 			}, {
 				"name": "scriptName",
 				"value": "store"
