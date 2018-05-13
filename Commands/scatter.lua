@@ -47,7 +47,7 @@ function Run(self, units, parameter)
 	if (fight) then cmdID = CMD.FIGHT end
 
 	for i,position in pairs(positions) do
-		 pos = Vec3(position.x, 0, position.z)
+		pos = Vec3(position.x, 0, position.z)
 
 		SpringGiveOrderToUnit(units[i], cmdID, pos:AsSpringVector(), {})	
 	end
@@ -88,7 +88,7 @@ function Run(self, units, parameter)
 
 
 
-	return SUCCESS
+	return RUNNING
 end
 
 function Reset(self)
