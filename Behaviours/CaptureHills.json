@@ -1,0 +1,114 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"8vIokmNaHvt8Z15Wg4waMoCXEq3teo2a": {
+			"height": 140,
+			"title": "nota_seryma.scatter",
+			"width": 511,
+			"x": 405,
+			"y": 46
+		},
+		"KmXQIBJz21mwQXxnmooHx3IRvvyVQTff": {
+			"height": 94,
+			"title": "store",
+			"width": 442,
+			"x": 700,
+			"y": -165
+		},
+		"Q2g1qyAJPxV7hpkTb8MPYqHru2ij7fbJ": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 194,
+			"y": -111
+		},
+		"X8Df0tWtRMZiyJgr4zJjSpflZrUEqgiY": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 467,
+			"y": -62
+		},
+		"x1pNciN24nFnvIQaA1wgNcDH5A2BsUXE": {
+			"height": 94,
+			"title": "store",
+			"width": 305,
+			"x": 705,
+			"y": -72
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "KmXQIBJz21mwQXxnmooHx3IRvvyVQTff",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "hills"
+				}, {
+					"name": "value",
+					"value": "nota_seryma.getHills(40,0.4)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "x1pNciN24nFnvIQaA1wgNcDH5A2BsUXE",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "positions"
+				}, {
+					"name": "value",
+					"value": "nota_seryma.HillsToPositions(hills)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			} ],
+			"id": "X8Df0tWtRMZiyJgr4zJjSpflZrUEqgiY",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [],
+			"id": "8vIokmNaHvt8Z15Wg4waMoCXEq3teo2a",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "Targets",
+				"value": "positions"
+			}, {
+				"name": "fight",
+				"value": "false"
+			}, {
+				"name": "scriptName",
+				"value": "nota_seryma.scatter"
+			} ],
+			"scriptName": "nota_seryma.scatter"
+		} ],
+		"id": "Q2g1qyAJPxV7hpkTb8MPYqHru2ij7fbJ",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "hills == nil"
+		}, {
+			"name": "repeat",
+			"value": "false"
+		} ]
+	}
+}
