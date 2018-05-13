@@ -46,39 +46,45 @@ function Run(self, units, parameter)
 	local cmdID = CMD.MOVE
 	if (fight) then cmdID = CMD.FIGHT end
 
-	local groupSize = math.floor(#units / #positions)
+	for i,position in pairs(positions) do
+		 pos = Vec3(position.x, 0, position.z)
 
-	local send = 0
-	local pos = 1
-	while send < #units do
-
-		local u = {}
-		for unit = send + 1, send + 1 + groupSize do
-			table.insert(u, units[unit])
-		end
-
-		Spring.Echo("Size")
-		Spring.Echo(#u)
-
-		--Move(self, u, positions[pos])
-		for i=1, #u do
-			local position = Vec3(positions[pos].x, 0, positions[pos].z)
-			position.y = 0
-
-			Spring.Echo("vec")
-			Spring.Echo(i)
-			-- Spring.Echo("vec")
-			-- Spring.Echo(position)
-			-- Spring.Echo(position.x)
-			-- Spring.Echo(position.y)
-			-- Spring.Echo(position.z)
-
-			SpringGiveOrderToUnit(u[i], cmdID, position:AsSpringVector(), {})
-		end
-
-		pos = pos + 1
-		send = send + #u
+		SpringGiveOrderToUnit(units[i], cmdID, pos:AsSpringVector(), {})	
 	end
+
+	-- local groupSize = math.floor(#units / #positions)
+
+	-- local send = 0
+	-- local pos = 1
+	-- while send < #units do
+
+	-- 	local u = {}
+	-- 	for unit = send + 1, send + 1 + groupSize do
+	-- 		table.insert(u, units[unit])
+	-- 	end
+
+	-- 	Spring.Echo("Size")
+	-- 	Spring.Echo(#u)
+
+	-- 	--Move(self, u, positions[pos])
+	-- 	for i=1, #u do
+	-- 		local position = Vec3(positions[pos].x, 0, positions[pos].z)
+	-- 		position.y = 0
+
+	-- 		Spring.Echo("vec")
+	-- 		Spring.Echo(i)
+	-- 		-- Spring.Echo("vec")
+	-- 		-- Spring.Echo(position)
+	-- 		-- Spring.Echo(position.x)
+	-- 		-- Spring.Echo(position.y)
+	-- 		-- Spring.Echo(position.z)
+
+	-- 		SpringGiveOrderToUnit(u[i], cmdID, position:AsSpringVector(), {})
+	-- 	end
+
+	-- 	pos = pos + 1
+	-- 	send = send + #u
+	-- end
 
 
 
