@@ -1,26 +1,14 @@
 function getInfo()
 	return {
 		onNoUnits = SUCCESS, -- instant success
-		tooltip = "Loads given units.",
+		tooltip = "Loads given units",
 		parameterDefs = {
 			{ 
-				name = "What",
+				name = "Units",
 				variableType = "expression",
 				componentType = "editBox",
 				defaultValue = "",
 			},
-			-- { 
-			-- 	name = "fight",
-			-- 	variableType = "expression",
-			-- 	componentType = "editBox",
-			-- 	defaultValue = "false",
-			-- }
-			-- { 
-			-- 	name = "Where",
-			-- 	variableType = "expression",
-			-- 	componentType = "editBox",
-			-- 	defaultValue = "",
-			-- },
 		}
 	}
 end
@@ -32,12 +20,6 @@ VFS.Include(modules.attach.data.path .. modules.attach.data.head) -- attach lib 
 
 -- get other madatory dependencies
 attach.Module(modules, "message") -- communication backend load
-
-function getInfo()
-    return {
-        period = 0 -- no caching
-    }
-end
 
 -- @description return current wind statistics
 function endGame()
@@ -85,7 +67,7 @@ end
 
 
 function Run(self, units, parameter)
-	local what = parameter.What
+	local what = parameter.Units
 	--local where = parameter.Where
 	
 	

@@ -27,12 +27,6 @@ VFS.Include(modules.attach.data.path .. modules.attach.data.head) -- attach lib 
 -- get other madatory dependencies
 attach.Module(modules, "message") -- communication backend load
 
-function getInfo()
-    return {
-        period = 0 -- no caching
-    }
-end
-
 function endGame()
     message.SendRules({
         subject = "CTP_playerTriggeredGameEnd",

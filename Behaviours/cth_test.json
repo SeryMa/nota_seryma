@@ -6,6 +6,18 @@
 		"parameters": []
 	}, {
 		"children": [],
+		"id": "Z7nZHjCp1HgCcYkLKbAknnBGgAg5hINj",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "msg",
+			"value": "core.MissionInfo()"
+		}, {
+			"name": "scriptName",
+			"value": "echo"
+		} ],
+		"scriptName": "echo"
+	}, {
+		"children": [],
 		"id": "SvKDGsKc3SBoNNatjON7JFA2xrUikxA6",
 		"nodeType": "luaCommand",
 		"parameters": [ {
@@ -18,32 +30,42 @@
 		"scriptName": "echo"
 	}, {
 		"children": [],
-		"id": "Z7nZHjCp1HgCcYkLKbAknnBGgAg5hINj",
+		"id": "go4ZuxlD8y1yp9G6hxILVYBSvRIQIX2A",
 		"nodeType": "luaCommand",
 		"parameters": [ {
-			"name": "msg",
-			"value": "core.MissionInfo()"
+			"name": "Units",
+			"value": ""
 		}, {
 			"name": "scriptName",
-			"value": "echo"
+			"value": "nota_seryma.transportUnits"
 		} ],
-		"scriptName": "echo"
+		"scriptName": "nota_seryma.transportUnits"
 	} ],
 	"additionalParameters": {
 		"root": {
-			"height": 88,
-			"width": 180
+			"height": 108,
+			"width": 216
 		}
 	},
-	"inputs": [],
+	"inputs": [ {
+		"command": "BETS_UNIT",
+		"name": "input0"
+	} ],
 	"outputs": [],
 	"properties": {
+		"38tW0gXATOLAeI5Qs53sohhuom85SKtH": {
+			"height": 72,
+			"title": "nota_seryma.transportUnits",
+			"width": 237,
+			"x": 451,
+			"y": 24
+		},
 		"BsVWxFLPz2u7dFH1yzOhMvkDr1bTNPsT": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 159,
-			"y": -83
+			"x": 270,
+			"y": -3
 		},
 		"SvKDGsKc3SBoNNatjON7JFA2xrUikxA6": {
 			"height": 74,
@@ -59,19 +81,19 @@
 			"x": 371,
 			"y": -133
 		},
+		"go4ZuxlD8y1yp9G6hxILVYBSvRIQIX2A": {
+			"height": 72,
+			"title": "nota_seryma.transportUnits",
+			"width": 237,
+			"x": 753,
+			"y": 6
+		},
 		"xZg2UYoVRsKaWjxaJTEOhB34nlDhY5tx": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
 			"x": 240,
 			"y": 133
-		},
-		"zWaECoGrh7XC3fcXBaCuD57kQgpv7zJT": {
-			"height": 94,
-			"title": "store",
-			"width": 308,
-			"x": 422,
-			"y": 18
 		}
 	},
 	"roles": [ {
@@ -81,19 +103,16 @@
 	"root": {
 		"children": [ {
 			"children": [],
-			"id": "zWaECoGrh7XC3fcXBaCuD57kQgpv7zJT",
+			"id": "38tW0gXATOLAeI5Qs53sohhuom85SKtH",
 			"nodeType": "luaCommand",
 			"parameters": [ {
-				"name": "var",
-				"value": "x"
-			}, {
-				"name": "value",
-				"value": "nota_seryma.ExampleDebug(units)"
+				"name": "Units",
+				"value": "input0"
 			}, {
 				"name": "scriptName",
-				"value": "store"
+				"value": "nota_seryma.transportUnits"
 			} ],
-			"scriptName": "store"
+			"scriptName": "nota_seryma.transportUnits"
 		} ],
 		"id": "BsVWxFLPz2u7dFH1yzOhMvkDr1bTNPsT",
 		"nodeType": "sequence",
