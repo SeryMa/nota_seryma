@@ -1,0 +1,445 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"0qHLKS0uD8mDQMRPfzSxdlqrQ4h192iR": {
+			"height": 70,
+			"title": "roleSplit",
+			"width": 202,
+			"x": 672,
+			"y": -90
+		},
+		"0zkfAptdgy8ebR3ILCpnFYORZ8Cw1Fmz": {
+			"height": 140,
+			"title": "Capture hills",
+			"width": 511,
+			"x": 647,
+			"y": 273
+		},
+		"DRJbgmqL1cPM4wliPIgqHTKNFOW3eC3d": {
+			"height": 94,
+			"title": "store",
+			"width": 198,
+			"x": 1672,
+			"y": -203
+		},
+		"Eb48PqsSrCWbTLQYDDQzQwXGQHo9UpAP": {
+			"height": 92,
+			"title": "store",
+			"width": 156,
+			"x": 1666,
+			"y": -370
+		},
+		"FZIkVNODIRDi5oW63J4I6x9DmQp4jBlP": {
+			"height": 130,
+			"title": "reference",
+			"width": 214,
+			"x": 1223,
+			"y": 58
+		},
+		"Fj8KTArsaW1DjPUsHihfbxALD3wYF6CI": {
+			"height": 90,
+			"title": "Common.move",
+			"width": 386,
+			"x": 2396,
+			"y": 112
+		},
+		"L9noghAluhdZVNgIRdugDn4i0mC914jW": {
+			"height": 74,
+			"title": "waitUntil",
+			"width": 446,
+			"x": 2210,
+			"y": -55
+		},
+		"N8UTvlo667ldmZqfNfDMkDGyxg5N381g": {
+			"height": 92,
+			"title": "store",
+			"width": 187,
+			"x": 2397,
+			"y": 27
+		},
+		"NDOb251LVYQOKWanNKtlIKlEpQLQ8P7L": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 2216,
+			"y": 38
+		},
+		"QUhmlIgstEHnHJay8WN8LsnKqdj2cmzp": {
+			"height": 72,
+			"title": "waitUntil",
+			"width": 150,
+			"x": 1676,
+			"y": -122
+		},
+		"TKmFXfatjntEeYp7xfU0Cl0lgAbMQsEj": {
+			"height": 60,
+			"title": "Load data",
+			"width": 145,
+			"x": 413,
+			"y": -272
+		},
+		"U7VrOb5xKV8bCZbgUwLRmwFKXw95XlJL": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 444,
+			"y": 78
+		},
+		"UbhLX1z4oGqBMLS8A3corHzFvsjIWbxm": {
+			"height": 94,
+			"title": "store",
+			"width": 305,
+			"x": 679,
+			"y": -244
+		},
+		"WMDhjclHZ7i74VR8AbHkX5wloN7mXHLM": {
+			"height": 74,
+			"title": "echo",
+			"width": 304,
+			"x": 2235,
+			"y": -127
+		},
+		"XyihLZCpR7U3WbCwCv5HRx4cWTavTmH7": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 952,
+			"y": 52
+		},
+		"aPLp51uoZ4ZDrHUNwRJuvR1nTztGDoxN": {
+			"height": 94,
+			"title": "store",
+			"width": 442,
+			"x": 674,
+			"y": -337
+		},
+		"bJXXyWWDerk61wRXZEsRbak1dVeNGL3A": {
+			"height": 90,
+			"title": "Data loaded",
+			"width": 194,
+			"x": 194,
+			"y": -111
+		},
+		"dkgs4rGu0zdMPmt5Eq3WC7bfGyPyvOnC": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 1220,
+			"y": -98
+		},
+		"f5MkFyh2asrHdDtbfcqwmRB5JsRy64BB": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 380,
+			"x": 1461,
+			"y": -20
+		},
+		"fpfLAXGkFjpnYshqhR25EXeZ5KciSqCQ": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 2401,
+			"y": 193
+		},
+		"fre72Z1yMaDoXjZsUl4V6s6ChlCdXjCy": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 1941,
+			"y": 87
+		},
+		"pO2BU69zM49cYaVrliRnuUzBx3YOKlsH": {
+			"height": 92,
+			"title": "store",
+			"width": 156,
+			"x": 1669,
+			"y": -287
+		},
+		"uYphNo6lpvZO8mTYu3ePK0m3CGyi7GOy": {
+			"height": 60,
+			"title": "Save data",
+			"width": 145,
+			"x": 1463,
+			"y": -168
+		},
+		"xhX5cHVL2ss7d7Qv5X9OBZ3dUW6cDd8X": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 1914,
+			"y": -12
+		}
+	},
+	"roles": [ {
+		"categories": [ "nota_seryma.Tank" ],
+		"name": "Tank"
+	}, {
+		"categories": [ "nota_raiders.bots" ],
+		"name": "Fighters"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "aPLp51uoZ4ZDrHUNwRJuvR1nTztGDoxN",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "hills"
+				}, {
+					"name": "value",
+					"value": "nota_seryma.getHills(40,0.4)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "UbhLX1z4oGqBMLS8A3corHzFvsjIWbxm",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "positions"
+				}, {
+					"name": "value",
+					"value": "nota_seryma.HillsToPositions(hills)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			} ],
+			"id": "TKmFXfatjntEeYp7xfU0Cl0lgAbMQsEj",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [ {
+						"children": [ {
+							"children": [],
+							"id": "Eb48PqsSrCWbTLQYDDQzQwXGQHo9UpAP",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "clearedPoints"
+							}, {
+								"name": "value",
+								"value": "0"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						}, {
+							"children": [],
+							"id": "pO2BU69zM49cYaVrliRnuUzBx3YOKlsH",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "Tank"
+							}, {
+								"name": "value",
+								"value": "units[1]"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						}, {
+							"children": [],
+							"id": "DRJbgmqL1cPM4wliPIgqHTKNFOW3eC3d",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "intel"
+							}, {
+								"name": "value",
+								"value": "core.MissionInfo()"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						}, {
+							"children": [],
+							"id": "QUhmlIgstEHnHJay8WN8LsnKqdj2cmzp",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "condition",
+								"value": "false"
+							}, {
+								"name": "scriptName",
+								"value": "waitUntil"
+							} ],
+							"scriptName": "waitUntil"
+						} ],
+						"id": "uYphNo6lpvZO8mTYu3ePK0m3CGyi7GOy",
+						"nodeType": "sequence",
+						"parameters": []
+					}, {
+						"children": [ {
+							"children": [ {
+								"children": [],
+								"id": "WMDhjclHZ7i74VR8AbHkX5wloN7mXHLM",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "msg",
+									"value": "core.MissionInfo().enemyPositions"
+								}, {
+									"name": "scriptName",
+									"value": "echo"
+								} ],
+								"scriptName": "echo"
+							}, {
+								"children": [],
+								"id": "L9noghAluhdZVNgIRdugDn4i0mC914jW",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "condition",
+									"value": "clearedPoints == #core.MissionInfo().enemyPositions"
+								}, {
+									"name": "scriptName",
+									"value": "waitUntil"
+								} ],
+								"scriptName": "waitUntil"
+							}, {
+								"children": [ {
+									"children": [],
+									"id": "N8UTvlo667ldmZqfNfDMkDGyxg5N381g",
+									"nodeType": "luaCommand",
+									"parameters": [ {
+										"name": "var",
+										"value": "clearedPoints"
+									}, {
+										"name": "value",
+										"value": "clearedPoints+1"
+									}, {
+										"name": "scriptName",
+										"value": "store"
+									} ],
+									"scriptName": "store"
+								}, {
+									"children": [],
+									"id": "Fj8KTArsaW1DjPUsHihfbxALD3wYF6CI",
+									"nodeType": "luaCommand",
+									"parameters": [ {
+										"name": "pos",
+										"value": "core.MissionInfo().enemyPositions[clearedPoints]"
+									}, {
+										"name": "fight",
+										"value": "false"
+									}, {
+										"name": "scriptName",
+										"value": "Common.move"
+									} ],
+									"scriptName": "Common.move"
+								}, {
+									"children": [],
+									"id": "fpfLAXGkFjpnYshqhR25EXeZ5KciSqCQ",
+									"nodeType": "wait",
+									"parameters": [ {
+										"name": "time",
+										"value": 5
+									} ]
+								} ],
+								"id": "NDOb251LVYQOKWanNKtlIKlEpQLQ8P7L",
+								"nodeType": "sequence",
+								"parameters": []
+							} ],
+							"id": "xhX5cHVL2ss7d7Qv5X9OBZ3dUW6cDd8X",
+							"nodeType": "parallel",
+							"parameters": [ {
+								"name": "mode",
+								"value": "all-success"
+							} ]
+						}, {
+							"children": [],
+							"id": "fre72Z1yMaDoXjZsUl4V6s6ChlCdXjCy",
+							"nodeType": "success",
+							"parameters": []
+						} ],
+						"id": "f5MkFyh2asrHdDtbfcqwmRB5JsRy64BB",
+						"nodeType": "luaCondition",
+						"parameters": [ {
+							"name": "expression",
+							"value": "clearedPoints <= #core.MissionInfo().enemyPositions"
+						}, {
+							"name": "repeat",
+							"value": "true"
+						} ]
+					} ],
+					"id": "dkgs4rGu0zdMPmt5Eq3WC7bfGyPyvOnC",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "clearedPoints == nil"
+					}, {
+						"name": "repeat",
+						"value": "true"
+					} ]
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "FZIkVNODIRDi5oW63J4I6x9DmQp4jBlP",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_seryma._follow"
+						} ],
+						"referenceInputs": [ {
+							"name": "Commander",
+							"value": "Tank"
+						} ],
+						"referenceOutputs": []
+					} ],
+					"id": "XyihLZCpR7U3WbCwCv5HRx4cWTavTmH7",
+					"nodeType": "repeat",
+					"parameters": []
+				} ],
+				"id": "0qHLKS0uD8mDQMRPfzSxdlqrQ4h192iR",
+				"nodeType": "roleSplit",
+				"parameters": [ {
+					"name": "mode",
+					"value": "any-success"
+				} ]
+			}, {
+				"children": [],
+				"id": "0zkfAptdgy8ebR3ILCpnFYORZ8Cw1Fmz",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "Targets",
+					"value": "positions"
+				}, {
+					"name": "fight",
+					"value": "false"
+				}, {
+					"name": "scriptName",
+					"value": "nota_seryma.scatter"
+				} ],
+				"scriptName": "nota_seryma.scatter"
+			} ],
+			"id": "U7VrOb5xKV8bCZbgUwLRmwFKXw95XlJL",
+			"nodeType": "sequence",
+			"parameters": []
+		} ],
+		"id": "bJXXyWWDerk61wRXZEsRbak1dVeNGL3A",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "hills == nil"
+		}, {
+			"name": "repeat",
+			"value": "false"
+		} ]
+	}
+}

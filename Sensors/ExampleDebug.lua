@@ -1,9 +1,9 @@
 local sensorInfo = {
-	name = "ExampleDebug",
-	desc = "Sends data to example debug widget",
-	author = "PepeAmpere",
+	name = "Debug",
+	desc = "",
+	author = "SeryMa",
 	date = "2018-04-16",
-	license = "MIT",
+	license = "none",
 }
 
 -- get madatory module operators
@@ -22,22 +22,22 @@ function getInfo()
 end
 
 -- @description return current wind statistics
-return function()
-	if #units > 0 then
-		local unitID = units[1]
-		local x,y,z = Spring.GetUnitPosition(unitID)
-		if (Script.LuaUI('exampleDebug_update')) then
-			Script.LuaUI.exampleDebug_update(
-				unitID, -- key
-				{	-- data
-					startPos = Vec3(x,y,z), 
-					endPos = Vec3(x,y,z) + Vec3(0,0,100)
-				}
-			)
+return function(units)
+
+	local ID = units[1]
+
+	Spring.Echo(ID)
+	Spring.Echo(UnitDefs[ID])
+
+	for i = 1, 5000 do
+		if UnitDefs[i] then
+			Spring.Echo(UnitDefs[i].humanName)
+			Spring.Echo(i)
+			
 		end
-		return {	-- data
-					startPos = Vec3(x,y,z), 
-					endPos = Vec3(x,y,z) + Vec3(0,0,100)
-				}
 	end
+
+	
+	return UnitDefs[ID]
+
 end

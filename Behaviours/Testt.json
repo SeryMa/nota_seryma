@@ -20,8 +20,8 @@
 			"height": 94,
 			"title": "store",
 			"width": 442,
-			"x": 548,
-			"y": -114
+			"x": 773,
+			"y": -154
 		},
 		"AZKLBA8KqqZbwckjepMvXOCxY5HSksWm": {
 			"height": 90,
@@ -29,6 +29,20 @@
 			"width": 194,
 			"x": 263,
 			"y": -108
+		},
+		"dxpI5mZmeL8zzpLsqx28i7hCKN8IfTCX": {
+			"height": 94,
+			"title": "store",
+			"width": 198,
+			"x": 810,
+			"y": -64
+		},
+		"j79uqplELMYaal0J2WkIUUU9iZOmgAHY": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 487,
+			"y": -134
 		}
 	},
 	"roles": [ {
@@ -37,20 +51,40 @@
 	} ],
 	"root": {
 		"children": [ {
-			"children": [],
-			"id": "AHd7p8aU2w5RsEqEKZsMe7PVEMNcgUTv",
-			"nodeType": "luaCommand",
-			"parameters": [ {
-				"name": "var",
-				"value": "hills"
+			"children": [ {
+				"children": [],
+				"id": "AHd7p8aU2w5RsEqEKZsMe7PVEMNcgUTv",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "hills"
+				}, {
+					"name": "value",
+					"value": "nota_seryma.getHills(150,0.6)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
 			}, {
-				"name": "value",
-				"value": "nota_seryma.getHills(150,0.6)"
-			}, {
-				"name": "scriptName",
-				"value": "store"
+				"children": [],
+				"id": "dxpI5mZmeL8zzpLsqx28i7hCKN8IfTCX",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "intel"
+				}, {
+					"name": "value",
+					"value": "core.MissionInfo()"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
 			} ],
-			"scriptName": "store"
+			"id": "j79uqplELMYaal0J2WkIUUU9iZOmgAHY",
+			"nodeType": "sequence",
+			"parameters": []
 		}, {
 			"children": [],
 			"id": "8djKNtOAuIVhQ08ER5CwsPpvpyZ6H6Tb",

@@ -1,5 +1,17 @@
 {
-	"additionalNodes": [],
+	"additionalNodes": [ {
+		"children": [],
+		"id": "7l9AoX053jodXbveoelFlOmfl75gYdoK",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "msg",
+			"value": "nota_seryma.Position(Commander)"
+		}, {
+			"name": "scriptName",
+			"value": "echo"
+		} ],
+		"scriptName": "echo"
+	} ],
 	"additionalParameters": {
 		"root": {
 			"height": 128,
@@ -40,18 +52,6 @@
 	} ],
 	"root": {
 		"children": [ {
-			"children": [],
-			"id": "7l9AoX053jodXbveoelFlOmfl75gYdoK",
-			"nodeType": "luaCommand",
-			"parameters": [ {
-				"name": "msg",
-				"value": "nota_seryma.Position(Commander)"
-			}, {
-				"name": "scriptName",
-				"value": "echo"
-			} ],
-			"scriptName": "echo"
-		}, {
 			"children": [],
 			"id": "SM3h7s4zSsQItignhk2GZXeXsoftKnzX",
 			"nodeType": "luaCommand",

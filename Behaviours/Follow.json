@@ -1,5 +1,29 @@
 {
-	"additionalNodes": [],
+	"additionalNodes": [ {
+		"children": [],
+		"id": "aScyM5t3nyUKrGGMVy0xdTvYdlDl7Vjy",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "msg",
+			"value": "Commander"
+		}, {
+			"name": "scriptName",
+			"value": "echo"
+		} ],
+		"scriptName": "echo"
+	}, {
+		"children": [],
+		"id": "FI4oTO254whXr4KVvEjmISHVX4ERK6xu",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "msg",
+			"value": "nota_seryma.Position(Commander[1])"
+		}, {
+			"name": "scriptName",
+			"value": "echo"
+		} ],
+		"scriptName": "echo"
+	} ],
 	"additionalParameters": {
 		"root": {
 			"height": 128,
@@ -12,12 +36,33 @@
 	} ],
 	"outputs": [],
 	"properties": {
+		"74w0wdrZIWV2T6uzgVEcaAu6ahpWktFf": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 320,
+			"y": -57
+		},
 		"9zvhe3zDohoBdgncJ60edpyRxRGsQKWW": {
 			"height": 130,
 			"title": "reference",
 			"width": 290,
-			"x": 340,
-			"y": -1
+			"x": 579,
+			"y": 2
+		},
+		"FI4oTO254whXr4KVvEjmISHVX4ERK6xu": {
+			"height": 74,
+			"title": "echo",
+			"width": 482,
+			"x": 580,
+			"y": -67
+		},
+		"aScyM5t3nyUKrGGMVy0xdTvYdlDl7Vjy": {
+			"height": 72,
+			"title": "echo",
+			"width": 158,
+			"x": 577,
+			"y": -128
 		}
 	},
 	"roles": [ {
@@ -25,17 +70,22 @@
 		"name": "Role 0"
 	} ],
 	"root": {
-		"children": [],
-		"id": "9zvhe3zDohoBdgncJ60edpyRxRGsQKWW",
-		"nodeType": "reference",
-		"parameters": [ {
-			"name": "behaviourName",
-			"value": "nota_seryma._follow"
+		"children": [ {
+			"children": [],
+			"id": "9zvhe3zDohoBdgncJ60edpyRxRGsQKWW",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "nota_seryma._follow"
+			} ],
+			"referenceInputs": [ {
+				"name": "Commander",
+				"value": "Commander[1]"
+			} ],
+			"referenceOutputs": []
 		} ],
-		"referenceInputs": [ {
-			"name": "Commander",
-			"value": "Commander[1]"
-		} ],
-		"referenceOutputs": []
+		"id": "74w0wdrZIWV2T6uzgVEcaAu6ahpWktFf",
+		"nodeType": "sequence",
+		"parameters": []
 	}
 }

@@ -1,20 +1,26 @@
 function getInfo()
 	return {
 		onNoUnits = SUCCESS, -- instant success
-		tooltip = "Sccaters units accros positions.",
+		tooltip = "Loads given units.",
 		parameterDefs = {
 			{ 
-				name = "Targets",
+				name = "What",
 				variableType = "expression",
 				componentType = "editBox",
 				defaultValue = "",
 			},
-			{ 
-				name = "fight",
-				variableType = "expression",
-				componentType = "editBox",
-				defaultValue = "false",
-			}
+			-- { 
+			-- 	name = "fight",
+			-- 	variableType = "expression",
+			-- 	componentType = "editBox",
+			-- 	defaultValue = "false",
+			-- }
+			-- { 
+			-- 	name = "Where",
+			-- 	variableType = "expression",
+			-- 	componentType = "editBox",
+			-- 	defaultValue = "",
+			-- },
 		}
 	}
 end
@@ -33,6 +39,7 @@ function getInfo()
     }
 end
 
+-- @description return current wind statistics
 function endGame()
     message.SendRules({
         subject = "CTP_playerTriggeredGameEnd",
@@ -54,44 +61,38 @@ local function ClearState(self)
 	self.lastleaderPosition = Vec3(0,0,0)
 end
 
-local function Move(self, units, position)
+local function Move(self, units, fight, position)
+	-- pick the spring command implementing the move
+	local cmdID = CMD.MOVE
+	if (fight) then cmdID = CMD.FIGHT end
+
 	for i=1, #units do
 		SpringGiveOrderToUnit(units[i], cmdID, position, {})
 	end
 end
 
-function Run(self, units, parameter)
-	local positions = parameter.Targets -- unitId
-	local fight = parameter.fight -- boolean
-	
-	-- pick the spring command implementing the move
-	local cmdID = CMD.MOVE
-	if (fight) then cmdID = CMD.FIGHT end
-
-
-	local i = 0
-	while i < #units and i < #positions do
-		local position = positions[i%#positions]
-		local unit = units[i%#units]
-
-		Spring.Echo("------------------------")
-		Spring.Echo(i)
-		Spring.Echo(#units)
-		Spring.Echo(i%#units)
-		Spring.Echo("------------------------")
-
-		pos = Vec3(position.x, position.y, position.z)
-		SpringGiveOrderToUnit(unit, cmdID, pos:AsSpringVector(), {})	
-
+local function Load(self, units, target)
+	for i=1, #units do
+		SpringGiveOrderToUnit(units[i], CMD.LOAD_UNITS, target, {})
 	end
+end
 
-	-- if #units > #positions then
-	-- 	for i,position in pairs(positions) do
-	-- 		pos = Vec3(position.x, position.y, position.z)
+local function UnLoad(self, units, target)
+	for i=1, #units do
+		SpringGiveOrderToUnit(units[i], CMD.UNLOAD_UNITS, target, {})
+	end
+end
 
-	-- 		SpringGiveOrderToUnit(units[i], cmdID, pos:AsSpringVector(), {})	
-	-- 	end
-	-- end
+
+function Run(self, units, parameter)
+	local what = parameter.What
+	--local where = parameter.Where
+	
+	
+
+	Spring.Echo()
+
+	Load(self, units, what)
 
 	return RUNNING
 end
