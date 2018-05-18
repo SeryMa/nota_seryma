@@ -69,7 +69,7 @@ function Run(self, units, parameter)
 	if (fight) then cmdID = CMD.FIGHT end
 
 
-	local i = 0
+	local i = 1
 	while i < #units and i < #positions do
 		local position = positions[i%#positions]
 		local unit = units[i%#units]
