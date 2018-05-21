@@ -2,12 +2,14 @@
 	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
-			"height": 108,
+			"height": 110,
 			"width": 180
 		}
 	},
 	"inputs": [],
-	"outputs": [],
+	"outputs": [ {
+		"name": "windVector"
+	} ],
 	"properties": {
 		"25U0Wmbt1AmTAA1LLlC9LQWPdx0ksgeS": {
 			"height": 94,
@@ -26,7 +28,7 @@
 		"Hls9OKvaXSMWCaXmgJSP8lLlHcdkPsxQ": {
 			"height": 94,
 			"title": "store",
-			"width": 627,
+			"width": 1000,
 			"x": 459,
 			"y": 40
 		},
@@ -41,8 +43,8 @@
 			"height": 90,
 			"title": "Common.relativeMove",
 			"width": 310,
-			"x": 456,
-			"y": 123
+			"x": 464,
+			"y": 129
 		}
 	},
 	"roles": [ {
@@ -74,7 +76,7 @@
 				"value": "offset"
 			}, {
 				"name": "value",
-				"value": "100"
+				"value": "1"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -89,7 +91,7 @@
 				"value": "windVector"
 			}, {
 				"name": "value",
-				"value": "{windData.dirX* windData.strength * offset, windData.dirZ * windData.strength * offset}"
+				"value": "Vec3(windData.dirX* windData.strength * offset, windData.dirY* windData.strength * offset, windData.dirZ * windData.strength * offset)"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -101,7 +103,7 @@
 			"nodeType": "luaCommand",
 			"parameters": [ {
 				"name": "dist",
-				"value": "{x = windVector[1], z = windVector[2]}"
+				"value": "{x = windVector.x, z = windVector.z}"
 			}, {
 				"name": "fight",
 				"value": "true"

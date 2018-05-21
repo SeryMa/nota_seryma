@@ -1,5 +1,17 @@
 {
-	"additionalNodes": [],
+	"additionalNodes": [ {
+		"children": [],
+		"id": "VcKEOHFqQPB4amC0bMtwAwRptIz67ZJv",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "msg",
+			"value": "Commander"
+		}, {
+			"name": "scriptName",
+			"value": "echo"
+		} ],
+		"scriptName": "echo"
+	} ],
 	"additionalParameters": {
 		"root": {
 			"height": 108,
@@ -10,7 +22,7 @@
 	"outputs": [],
 	"properties": {
 		"Dd25b82b6J7D9s7AR9LJjNXeMF2gPgvK": {
-			"height": 110,
+			"height": 131,
 			"title": "reference",
 			"width": 269,
 			"x": 690,
@@ -59,7 +71,7 @@
 			"y": 121
 		},
 		"ri4kA51xVDavEbBTkDw4GaT7LMr899LY": {
-			"height": 151,
+			"height": 172,
 			"title": "reference",
 			"width": 323,
 			"x": 746,
@@ -92,18 +104,6 @@
 				"scriptName": "store"
 			}, {
 				"children": [],
-				"id": "VcKEOHFqQPB4amC0bMtwAwRptIz67ZJv",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "msg",
-					"value": "Commander"
-				}, {
-					"name": "scriptName",
-					"value": "echo"
-				} ],
-				"scriptName": "echo"
-			}, {
-				"children": [],
 				"id": "Dd25b82b6J7D9s7AR9LJjNXeMF2gPgvK",
 				"nodeType": "reference",
 				"parameters": [ {
@@ -111,7 +111,10 @@
 					"value": "nota_seryma.Sail"
 				} ],
 				"referenceInputs": [],
-				"referenceOutputs": []
+				"referenceOutputs": [ {
+					"name": "windVector",
+					"value": "offsetMove"
+				} ]
 			} ],
 			"id": "IGhvTI0il5KL9XY3Nc3Gs7I3wtwngoQN",
 			"nodeType": "sequence",
@@ -133,6 +136,12 @@
 				"referenceInputs": [ {
 					"name": "Commander",
 					"value": "Commander"
+				}, {
+					"name": "offsetVector",
+					"value": "offsetMove"
+				}, {
+					"name": "size",
+					"value": "10"
 				} ],
 				"referenceOutputs": []
 			} ],

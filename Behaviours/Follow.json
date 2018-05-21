@@ -44,7 +44,7 @@
 			"y": -57
 		},
 		"9zvhe3zDohoBdgncJ60edpyRxRGsQKWW": {
-			"height": 130,
+			"height": 151,
 			"title": "reference",
 			"width": 290,
 			"x": 579,
@@ -81,6 +81,9 @@
 			"referenceInputs": [ {
 				"name": "Commander",
 				"value": "Commander[1]"
+			}, {
+				"name": "offsetVector",
+				"value": "{x=0,y=0,z=0}"
 			} ],
 			"referenceOutputs": []
 		} ],
