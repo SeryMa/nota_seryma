@@ -3,8 +3,14 @@ function getInfo()
 		onNoUnits = SUCCESS, -- instant success
 		tooltip = "Loads given units",
 		parameterDefs = {
+			-- { 
+			-- 	name = "Units",
+			-- 	variableType = "expression",
+			-- 	componentType = "editBox",
+			-- 	defaultValue = "",
+			-- },
 			{ 
-				name = "Units",
+				name = "Area",
 				variableType = "expression",
 				componentType = "editBox",
 				defaultValue = "",
@@ -67,14 +73,19 @@ end
 
 
 function Run(self, units, parameter)
-	local what = parameter.Units
+	--local what = parameter.Units
+	local where = parameter.Area
 	--local where = parameter.Where
 	
-	
 
-	Spring.Echo()
-
-	Load(self, units, what)
+	if where == nil then
+		Load(self, units, what)
+	else
+		local t = {where.center.x, where.center.y, where.center.z, where.radius}
+		Spring.Echo(t)
+		Spring.Echo(t[1])
+		Load(self, units, t)
+	end
 
 	return RUNNING
 end

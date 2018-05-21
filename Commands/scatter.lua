@@ -1,7 +1,7 @@
 function getInfo()
 	return {
 		onNoUnits = SUCCESS, -- instant success
-		tooltip = "Sccaters units accros positions.",
+		tooltip = "Sccaters units accros given positions.",
 		parameterDefs = {
 			{ 
 				name = "Targets",
@@ -40,18 +40,16 @@ local THRESHOLD_STEP = 25
 local THRESHOLD_DEFAULT = 0
 
 -- speed-ups
-local SpringGetUnitPosition = Spring.GetUnitPosition
-local SpringGiveOrderToUnit = Spring.GiveOrderToUnit
+local GetUnitPosition = Spring.GetUnitPosition
+local GiveOrderToUnit = Spring.GiveOrderToUnit
 
 local function ClearState(self)
 	self.threshold = THRESHOLD_DEFAULT
 	self.lastleaderPosition = Vec3(0,0,0)
 end
 
-local function Move(self, units, position)
-	for i=1, #units do
-		SpringGiveOrderToUnit(units[i], cmdID, position, {})
-	end
+local function Distance(point, center)
+	return math.sqrt((center.x - point.x) * (center.x - point.x) + (center.z - point.z) * (center.z - point.z))
 end
 
 function Run(self, units, parameter)
@@ -62,32 +60,28 @@ function Run(self, units, parameter)
 	local cmdID = CMD.MOVE
 	if (fight) then cmdID = CMD.FIGHT end
 
+	local done = 0
 
-	local i = 1
-	while i < #units and i < #positions do
+	local max = 0
+	if #units > #positions then max = #units
+	else max = #positions end
+
+	for i = 1, max do
 		local position = positions[i%#positions]
 		local unit = units[i%#units]
 
-		Spring.Echo("------------------------")
-		Spring.Echo(i)
-		Spring.Echo(#units)
-		Spring.Echo(i%#units)
-		Spring.Echo("------------------------")
-
-		pos = Vec3(position.x, position.y, position.z)
-		SpringGiveOrderToUnit(unit, cmdID, pos:AsSpringVector(), {})	
-
+		if Distance(position, GetUnitPosition(unit)) < THRESHOLD_DEFAULT then
+			done = done + 1
+		else
+			pos = Vec3(position.x, position.y, position.z)
+			GiveOrderToUnit(unit, cmdID, pos:AsSpringVector(), {})
+		end
 	end
 
-	-- if #units > #positions then
-	-- 	for i,position in pairs(positions) do
-	-- 		pos = Vec3(position.x, position.y, position.z)
-
-	-- 		SpringGiveOrderToUnit(units[i], cmdID, pos:AsSpringVector(), {})	
-	-- 	end
-	-- end
-
-	return RUNNING
+	-- once 90% of units arrives to given destination declare SUCCESS
+	if done > 0.9*#units then return SUCCESS
+	else return RUNNING
+	end
 end
 
 

@@ -37,19 +37,19 @@
 			"x": 264,
 			"y": 13
 		},
+		"QDwhI3cfoAdDNDaRL23YuPsge6XmQL59": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 744,
+			"y": 133
+		},
 		"VcKEOHFqQPB4amC0bMtwAwRptIz67ZJv": {
 			"height": 74,
 			"title": "echo",
 			"width": 272,
 			"x": 693,
 			"y": -122
-		},
-		"f9NyrQ9coLf0tbp8OFAciHBvgZemxpMQ": {
-			"height": 151,
-			"title": "reference",
-			"width": 323,
-			"x": 745,
-			"y": 99
 		},
 		"qqsypFU24jjt5C9PzRCkdaVMxH8YPemB": {
 			"height": 90,
@@ -62,8 +62,8 @@
 			"height": 151,
 			"title": "reference",
 			"width": 323,
-			"x": 736,
-			"y": 293
+			"x": 746,
+			"y": 194
 		}
 	},
 	"roles": [ {
@@ -119,17 +119,9 @@
 		}, {
 			"children": [ {
 				"children": [],
-				"id": "f9NyrQ9coLf0tbp8OFAciHBvgZemxpMQ",
-				"nodeType": "reference",
-				"parameters": [ {
-					"name": "behaviourName",
-					"value": "nota_seryma.Follow"
-				} ],
-				"referenceInputs": [ {
-					"name": "Commander",
-					"value": "units[1]"
-				} ],
-				"referenceOutputs": []
+				"id": "QDwhI3cfoAdDNDaRL23YuPsge6XmQL59",
+				"nodeType": "success",
+				"parameters": []
 			}, {
 				"children": [],
 				"id": "ri4kA51xVDavEbBTkDw4GaT7LMr899LY",

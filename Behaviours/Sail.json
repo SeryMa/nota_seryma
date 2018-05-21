@@ -13,8 +13,8 @@
 			"height": 94,
 			"title": "store",
 			"width": 159,
-			"x": 458,
-			"y": -43
+			"x": 464,
+			"y": -139
 		},
 		"3zGc25E9KX1epadQ7Qkxi9SrjlAgwboa": {
 			"height": 54,
@@ -26,9 +26,16 @@
 		"Hls9OKvaXSMWCaXmgJSP8lLlHcdkPsxQ": {
 			"height": 94,
 			"title": "store",
-			"width": 592,
+			"width": 627,
 			"x": 459,
 			"y": 40
+		},
+		"U1brtscuTSAo4jFnnPZ3Iehc3QlVrhF8": {
+			"height": 94,
+			"title": "store",
+			"width": 159,
+			"x": 462,
+			"y": -48
 		},
 		"y5mOncUyR8HqJAlTZ68GleVttt8Iusp4": {
 			"height": 90,
@@ -60,6 +67,21 @@
 			"scriptName": "store"
 		}, {
 			"children": [],
+			"id": "U1brtscuTSAo4jFnnPZ3Iehc3QlVrhF8",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "offset"
+			}, {
+				"name": "value",
+				"value": "100"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
 			"id": "Hls9OKvaXSMWCaXmgJSP8lLlHcdkPsxQ",
 			"nodeType": "luaCommand",
 			"parameters": [ {
@@ -67,7 +89,7 @@
 				"value": "windVector"
 			}, {
 				"name": "value",
-				"value": "{windData.dirX* windData.strength, windData.dirZ * windData.strength}"
+				"value": "{windData.dirX* windData.strength * offset, windData.dirZ * windData.strength * offset}"
 			}, {
 				"name": "scriptName",
 				"value": "store"

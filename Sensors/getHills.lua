@@ -60,7 +60,6 @@ function Queue_empty(list)
 	return list.first > list.last 
 end
 
-
 local function Distance(point, center)
 	return math.sqrt((center.x - point.x) * (center.x - point.x) + (center.z - point.z) * (center.z - point.z))
 end
@@ -80,27 +79,32 @@ local function newHill(point)
 	hill.minX = point.x
 	hill.minZ = point.z
 
-	hill.diameter = 0
-	--table.insert(hill.points, point)
-
+	hill.diameter.x = 0
+	hill.diameter.z = 0
+	
 	return hill
 end
 
 local function addPointToHill(point, hill)
-	table.insert(hill.points, point)
+	-- New point on the hill
+	hill.points[#hill.points+1] = point)
 
+	-- Updating dimensions of the hill
 	if point.x > hill.maxX then hill.maxX = point.x end
 	if point.x < hill.minX then hill.minX = point.x end
 	if point.z > hill.maxZ then hill.maxZ = point.z end
 	if point.z < hill.minZ then hill.minZ = point.z end
 
-	hill.center = {x = hill.minX + (hill.maxX - hill.minX) /2, z = hill.minZ + (hill.maxZ - hill.minZ) /2}
-	hill.diameter = math.max(hill.maxX - hill.minX, hill.maxZ - hill.minZ)/2
+	hill.center = {x = hill.minX + (hill.maxX - hill.minX) /2, z = hill.minZ + (hiSFll.maxZ - hill.minZ) /2}
+	
+	hill.diameter.x = (hill.maxX - hill.minX) /2
+	hill.diameter.z = (hill.maxZ - hill.minZ) /2
 end
 
 
 -- @description return hills on the map
 return function(gridSize, ratio)
+	-- debug drawing inicialization
 	if (Script.LuaUI('boundary_init')) then
 		Script.LuaUI.boundary_init()
 	end
@@ -114,26 +118,24 @@ return function(gridSize, ratio)
 	local count = 0
 
 	local Lowest, Highest = Extremes()
-
 	local stepX = SizeX / gridSize
 	local stepZ = SizeZ / gridSize
 
-	--local hillStep = math.min(stepZ / gridSize, stepX / gridSize)
-	local hillStep = math.max(stepZ, stepX )
-
+	-- every height above this value is considered as a hill
 	local hillHeight = Lowest + (Highest - Lowest) * (ratio)
 
 	local function isHill(point)
 		return GetHeight(point.x, point.z) > hillHeight
 	end
 
+	-- function called when new hill is found
 	local function processPoint(highPoints, point)
 		local hill = newHill(point)
-		
 		
 		local q = Queue_new()
 		Queue_pushleft(q, point)
 
+		-- BFS to cover whole hill & mark found points (so they won't be added later)
 		while not Queue_empty(q) do
 			local hillPoint = Queue_popleft(q)
 
@@ -148,30 +150,12 @@ return function(gridSize, ratio)
 
 		hills[count] = hill
 		count = count + 1
-		
-
-
-
-		-- for i, hill in pairs(hills) do
-		-- 	for j, hillPoint in pairs(hill.points) do
-		-- 		if isCloseEnough(point, hillPoint, 1.2 * hillStep) then 
-		-- 			addPointToHill(point, hill)
-		-- 			return
-		-- 		end
-		-- 	end
-		-- end
-		
-		-- --hills[count] = Vec3(x, GetHeight(x,z), z)
-		-- hills[count] = newHill(point)
-		-- count = count + 1
 	end
 
-	local x = 1
-	local z = 1
-	local point
 
 	local highPoints = {}
-
+	
+	-- samplig for cycle - covers whole map & selects any points, that form a hill
 	for x = 1, SizeX, stepX do
 		for z = 1, SizeZ, stepZ do
 			local point = {x=x,z=z,y=GetHeight(x, z), checked = false}
@@ -182,6 +166,7 @@ return function(gridSize, ratio)
 		end
 	end
 
+	-- iterates over all "high" points & agregates them into hills
 	for x = 1, SizeX, stepX do
 		for z = 1, SizeZ, stepZ do
 			if highPoints[x] ~= nil and highPoints[x][z] ~= nil and not highPoints[x][z].checked then
@@ -190,6 +175,8 @@ return function(gridSize, ratio)
 		end
 	end
 
+
+	-- debug drawing widgets
 	if (Script.LuaUI('boundary_update')) then
 		for i, hill in pairs(hills) do
 			Script.LuaUI.boundary_update(i, { points = hill.points })
@@ -198,23 +185,14 @@ return function(gridSize, ratio)
 
 	if (Script.LuaUI('circle_update')) then
 		for i, hill in pairs(hills) do
-			Script.LuaUI.circle_update(
-				i, -- key
-				{	-- data
-					x=hill.center.x,y=hillHeight,z=hill.center.z,radius=30
-				}
-			)
+			Script.LuaUI.circle_update(i, { x=hill.center.x,y=hillHeight,z=hill.center.z,radius=30})
 		end 
 	end
 
 	if (Script.LuaUI('circle_update')) then
 		for i, hill in pairs(hills) do
-			Script.LuaUI.circle_update(
-				i+#hills+#hills, -- key
-				{	-- data
-					x=hill.center.x,y=hillHeight,z=hill.center.z,radius=hill.diameter
-				}
-			)
+			-- different key MUST be selected so the circles doesn't overwrite themselves
+			Script.LuaUI.circle_update(i+#hills+#hills, {x=hill.center.x,y=hillHeight,z=hill.center.z,radius=hill.diameter})
 		end 
 	end
 
