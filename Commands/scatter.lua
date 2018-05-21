@@ -48,12 +48,13 @@ local function ClearState(self)
 	self.lastleaderPosition = Vec3(0,0,0)
 end
 
+local sqrt = math.sqrt
 local function Distance(point, center)
-	return math.sqrt((center.x - point.x) * (center.x - point.x) + (center.z - point.z) * (center.z - point.z))
+	return sqrt((center.x - point.x) * (center.x - point.x) + (center.z - point.z) * (center.z - point.z))
 end
 
 function Run(self, units, parameter)
-	local positions = parameter.Targets -- unitId
+	local positions = parameter.Targets -- array of positions
 	local fight = parameter.fight -- boolean
 	
 	-- pick the spring command implementing the move
@@ -66,11 +67,11 @@ function Run(self, units, parameter)
 	if #units > #positions then max = #units
 	else max = #positions end
 
-	for i = 1, max do
-		local position = positions[i%#positions]
-		local unit = units[i%#units]
+	for i = 0, max-1 do
+		local position = positions[1 + i%#positions]
+		local unit = units[1 + i%#units]
 
-		if Distance(position, GetUnitPosition(unit)) < THRESHOLD_DEFAULT then
+		if Distance(position, Vec3(GetUnitPosition(unit))) < THRESHOLD_DEFAULT then
 			done = done + 1
 		else
 			pos = Vec3(position.x, position.y, position.z)

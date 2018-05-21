@@ -79,6 +79,7 @@ local function newHill(point)
 	hill.minX = point.x
 	hill.minZ = point.z
 
+	hill.diameter = {}
 	hill.diameter.x = 0
 	hill.diameter.z = 0
 	
@@ -87,7 +88,7 @@ end
 
 local function addPointToHill(point, hill)
 	-- New point on the hill
-	hill.points[#hill.points+1] = point)
+	hill.points[#hill.points+1] = point
 
 	-- Updating dimensions of the hill
 	if point.x > hill.maxX then hill.maxX = point.x end
@@ -95,7 +96,7 @@ local function addPointToHill(point, hill)
 	if point.z > hill.maxZ then hill.maxZ = point.z end
 	if point.z < hill.minZ then hill.minZ = point.z end
 
-	hill.center = {x = hill.minX + (hill.maxX - hill.minX) /2, z = hill.minZ + (hiSFll.maxZ - hill.minZ) /2}
+	hill.center = {x = hill.minX + (hill.maxX - hill.minX) /2, z = hill.minZ + (hill.maxZ - hill.minZ) /2}
 	
 	hill.diameter.x = (hill.maxX - hill.minX) /2
 	hill.diameter.z = (hill.maxZ - hill.minZ) /2
@@ -190,9 +191,10 @@ return function(gridSize, ratio)
 	end
 
 	if (Script.LuaUI('circle_update')) then
+		local max = math.max
 		for i, hill in pairs(hills) do
 			-- different key MUST be selected so the circles doesn't overwrite themselves
-			Script.LuaUI.circle_update(i+#hills+#hills, {x=hill.center.x,y=hillHeight,z=hill.center.z,radius=hill.diameter})
+			Script.LuaUI.circle_update(i+#hills+#hills, {x=hill.center.x,y=hillHeight,z=hill.center.z,radius= max(hill.diameter.x, hill.diameter.z)})
 		end 
 	end
 

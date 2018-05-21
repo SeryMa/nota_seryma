@@ -1,5 +1,10 @@
 {
-	"additionalNodes": [],
+	"additionalNodes": [ {
+		"children": [],
+		"id": "YnJ9t749xvF4vUhNNagTliRlmw5LWqiP",
+		"nodeType": "failure",
+		"parameters": []
+	} ],
 	"additionalParameters": {
 		"root": {
 			"height": 88,
@@ -9,173 +14,124 @@
 	"inputs": [],
 	"outputs": [],
 	"properties": {
-		"0qHLKS0uD8mDQMRPfzSxdlqrQ4h192iR": {
-			"height": 70,
-			"title": "roleSplit",
-			"width": 202,
-			"x": 672,
-			"y": -90
-		},
 		"0zkfAptdgy8ebR3ILCpnFYORZ8Cw1Fmz": {
-			"height": 140,
+			"height": 106,
 			"title": "Capture hills",
-			"width": 511,
-			"x": 647,
-			"y": 273
+			"width": 191,
+			"x": 1230,
+			"y": 160
 		},
-		"DRJbgmqL1cPM4wliPIgqHTKNFOW3eC3d": {
-			"height": 94,
-			"title": "store",
-			"width": 198,
-			"x": 1672,
-			"y": -203
-		},
-		"Eb48PqsSrCWbTLQYDDQzQwXGQHo9UpAP": {
-			"height": 92,
-			"title": "store",
-			"width": 156,
-			"x": 1666,
-			"y": -370
-		},
-		"FZIkVNODIRDi5oW63J4I6x9DmQp4jBlP": {
-			"height": 130,
-			"title": "reference",
-			"width": 214,
-			"x": 1223,
-			"y": 58
-		},
-		"Fj8KTArsaW1DjPUsHihfbxALD3wYF6CI": {
-			"height": 90,
-			"title": "Common.move",
-			"width": 386,
-			"x": 2396,
-			"y": 112
-		},
-		"L9noghAluhdZVNgIRdugDn4i0mC914jW": {
-			"height": 74,
-			"title": "waitUntil",
-			"width": 446,
-			"x": 2210,
-			"y": -55
-		},
-		"N8UTvlo667ldmZqfNfDMkDGyxg5N381g": {
-			"height": 92,
-			"title": "store",
-			"width": 187,
-			"x": 2397,
-			"y": 27
-		},
-		"NDOb251LVYQOKWanNKtlIKlEpQLQ8P7L": {
-			"height": 60,
-			"title": "sequence",
-			"width": 143,
-			"x": 2216,
-			"y": 38
-		},
-		"QUhmlIgstEHnHJay8WN8LsnKqdj2cmzp": {
+		"81uZwZa8ze7UtlhDopvaIEpeuIT1EVpp": {
 			"height": 72,
 			"title": "waitUntil",
 			"width": 150,
-			"x": 1676,
-			"y": -122
+			"x": 732,
+			"y": -190
 		},
 		"TKmFXfatjntEeYp7xfU0Cl0lgAbMQsEj": {
 			"height": 60,
 			"title": "Load data",
 			"width": 145,
-			"x": 413,
-			"y": -272
+			"x": 466,
+			"y": -387
 		},
 		"U7VrOb5xKV8bCZbgUwLRmwFKXw95XlJL": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 444,
+			"x": 480,
 			"y": 78
 		},
 		"UbhLX1z4oGqBMLS8A3corHzFvsjIWbxm": {
 			"height": 94,
 			"title": "store",
 			"width": 305,
-			"x": 679,
-			"y": -244
+			"x": 730,
+			"y": -359
 		},
-		"WMDhjclHZ7i74VR8AbHkX5wloN7mXHLM": {
-			"height": 74,
-			"title": "echo",
-			"width": 304,
-			"x": 2235,
-			"y": -127
+		"UjiY3c041y7I7xgLKiGop1e2hkaeffBj": {
+			"height": 72,
+			"title": "waitUntil",
+			"width": 150,
+			"x": 1235,
+			"y": 285
 		},
-		"XyihLZCpR7U3WbCwCv5HRx4cWTavTmH7": {
-			"height": 60,
-			"title": "repeat",
-			"width": 131,
-			"x": 952,
-			"y": 52
+		"V7CfmhIo3n2mgNe2dNItmpcoCoL1k03F": {
+			"height": 90,
+			"title": "Path is clear",
+			"width": 251,
+			"x": 912,
+			"y": 165
+		},
+		"YnJ9t749xvF4vUhNNagTliRlmw5LWqiP": {
+			"height": 54,
+			"title": "Could this be done without copy pasting the same node?",
+			"width": 440,
+			"x": 1350,
+			"y": 63
 		},
 		"aPLp51uoZ4ZDrHUNwRJuvR1nTztGDoxN": {
 			"height": 94,
 			"title": "store",
 			"width": 442,
-			"x": 674,
-			"y": -337
+			"x": 725,
+			"y": -452
+		},
+		"af1TrveReB00rTvDcwq0oikHJbxPfvoH": {
+			"height": 92,
+			"title": "store",
+			"width": 131,
+			"x": 1214,
+			"y": 19
 		},
 		"bJXXyWWDerk61wRXZEsRbak1dVeNGL3A": {
 			"height": 90,
 			"title": "Data loaded",
 			"width": 194,
-			"x": 194,
+			"x": 230,
 			"y": -111
 		},
-		"dkgs4rGu0zdMPmt5Eq3WC7bfGyPyvOnC": {
+		"e3Nc4G418qBzFeTNZqEXLWUbcNRj7fph": {
+			"height": 94,
+			"title": "store",
+			"width": 305,
+			"x": 731,
+			"y": -276
+		},
+		"iX4tlXKllhpoiqQ1iW80jwlEvKsZgEF8": {
+			"height": 70,
+			"title": "roleSplit",
+			"width": 202,
+			"x": 649,
+			"y": -46
+		},
+		"iuwzSoi5fIoNLtPGL1XX53mhiKO6WgzR": {
 			"height": 90,
-			"title": "luaCondition",
-			"width": 194,
-			"x": 1220,
-			"y": -98
+			"title": "Clear first enemy with bear",
+			"width": 251,
+			"x": 915,
+			"y": -54
 		},
-		"f5MkFyh2asrHdDtbfcqwmRB5JsRy64BB": {
+		"jvGtLgW3KIIIhFb6XXM05o40tgEwCk8w": {
 			"height": 90,
-			"title": "luaCondition",
-			"width": 380,
-			"x": 1461,
-			"y": -20
+			"title": "ram turret",
+			"width": 191,
+			"x": 1410,
+			"y": -121
 		},
-		"fpfLAXGkFjpnYshqhR25EXeZ5KciSqCQ": {
-			"height": 72,
-			"title": "wait",
-			"width": 131,
-			"x": 2401,
-			"y": 193
+		"mW0pLlf37SZn8xrqLfNeGblZPRl2hMcQ": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1219,
+			"y": -109
 		},
-		"fre72Z1yMaDoXjZsUl4V6s6ChlCdXjCy": {
-			"height": 54,
-			"title": "success",
-			"width": 132,
-			"x": 1941,
-			"y": 87
-		},
-		"pO2BU69zM49cYaVrliRnuUzBx3YOKlsH": {
+		"oRZXqRH8z11rQs1MQfPjYRlUp8pmjan8": {
 			"height": 92,
 			"title": "store",
-			"width": 156,
-			"x": 1669,
-			"y": -287
-		},
-		"uYphNo6lpvZO8mTYu3ePK0m3CGyi7GOy": {
-			"height": 60,
-			"title": "Save data",
-			"width": 145,
-			"x": 1463,
-			"y": -168
-		},
-		"xhX5cHVL2ss7d7Qv5X9OBZ3dUW6cDd8X": {
-			"height": 70,
-			"title": "parallel",
-			"width": 202,
-			"x": 1914,
-			"y": -12
+			"width": 131,
+			"x": 1404,
+			"y": -39
 		}
 	},
 	"roles": [ {
@@ -208,7 +164,7 @@
 				"nodeType": "luaCommand",
 				"parameters": [ {
 					"name": "var",
-					"value": "positions"
+					"value": "hillPositions"
 				}, {
 					"name": "value",
 					"value": "nota_seryma.HillsToPositions(hills)"
@@ -217,6 +173,33 @@
 					"value": "store"
 				} ],
 				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "e3Nc4G418qBzFeTNZqEXLWUbcNRj7fph",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "enemyPositions"
+				}, {
+					"name": "value",
+					"value": "core.MissionInfo().enemyPositions"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "81uZwZa8ze7UtlhDopvaIEpeuIT1EVpp",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "condition",
+					"value": "false"
+				}, {
+					"name": "scriptName",
+					"value": "waitUntil"
+				} ],
+				"scriptName": "waitUntil"
 			} ],
 			"id": "TKmFXfatjntEeYp7xfU0Cl0lgAbMQsEj",
 			"nodeType": "sequence",
@@ -227,162 +210,59 @@
 					"children": [ {
 						"children": [ {
 							"children": [],
-							"id": "Eb48PqsSrCWbTLQYDDQzQwXGQHo9UpAP",
+							"id": "jvGtLgW3KIIIhFb6XXM05o40tgEwCk8w",
 							"nodeType": "luaCommand",
 							"parameters": [ {
-								"name": "var",
-								"value": "clearedPoints"
+								"name": "pos",
+								"value": "enemyPositions[1]"
 							}, {
-								"name": "value",
-								"value": "0"
-							}, {
-								"name": "scriptName",
-								"value": "store"
-							} ],
-							"scriptName": "store"
-						}, {
-							"children": [],
-							"id": "pO2BU69zM49cYaVrliRnuUzBx3YOKlsH",
-							"nodeType": "luaCommand",
-							"parameters": [ {
-								"name": "var",
-								"value": "Tank"
-							}, {
-								"name": "value",
-								"value": "units[1]"
-							}, {
-								"name": "scriptName",
-								"value": "store"
-							} ],
-							"scriptName": "store"
-						}, {
-							"children": [],
-							"id": "DRJbgmqL1cPM4wliPIgqHTKNFOW3eC3d",
-							"nodeType": "luaCommand",
-							"parameters": [ {
-								"name": "var",
-								"value": "intel"
-							}, {
-								"name": "value",
-								"value": "core.MissionInfo()"
-							}, {
-								"name": "scriptName",
-								"value": "store"
-							} ],
-							"scriptName": "store"
-						}, {
-							"children": [],
-							"id": "QUhmlIgstEHnHJay8WN8LsnKqdj2cmzp",
-							"nodeType": "luaCommand",
-							"parameters": [ {
-								"name": "condition",
+								"name": "fight",
 								"value": "false"
 							}, {
 								"name": "scriptName",
-								"value": "waitUntil"
+								"value": "Common.move"
 							} ],
-							"scriptName": "waitUntil"
+							"scriptName": "Common.move"
+						}, {
+							"children": [],
+							"id": "oRZXqRH8z11rQs1MQfPjYRlUp8pmjan8",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "cleared"
+							}, {
+								"name": "value",
+								"value": "true"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
 						} ],
-						"id": "uYphNo6lpvZO8mTYu3ePK0m3CGyi7GOy",
+						"id": "mW0pLlf37SZn8xrqLfNeGblZPRl2hMcQ",
 						"nodeType": "sequence",
 						"parameters": []
 					}, {
-						"children": [ {
-							"children": [ {
-								"children": [],
-								"id": "WMDhjclHZ7i74VR8AbHkX5wloN7mXHLM",
-								"nodeType": "luaCommand",
-								"parameters": [ {
-									"name": "msg",
-									"value": "core.MissionInfo().enemyPositions"
-								}, {
-									"name": "scriptName",
-									"value": "echo"
-								} ],
-								"scriptName": "echo"
-							}, {
-								"children": [],
-								"id": "L9noghAluhdZVNgIRdugDn4i0mC914jW",
-								"nodeType": "luaCommand",
-								"parameters": [ {
-									"name": "condition",
-									"value": "clearedPoints == #core.MissionInfo().enemyPositions"
-								}, {
-									"name": "scriptName",
-									"value": "waitUntil"
-								} ],
-								"scriptName": "waitUntil"
-							}, {
-								"children": [ {
-									"children": [],
-									"id": "N8UTvlo667ldmZqfNfDMkDGyxg5N381g",
-									"nodeType": "luaCommand",
-									"parameters": [ {
-										"name": "var",
-										"value": "clearedPoints"
-									}, {
-										"name": "value",
-										"value": "clearedPoints+1"
-									}, {
-										"name": "scriptName",
-										"value": "store"
-									} ],
-									"scriptName": "store"
-								}, {
-									"children": [],
-									"id": "Fj8KTArsaW1DjPUsHihfbxALD3wYF6CI",
-									"nodeType": "luaCommand",
-									"parameters": [ {
-										"name": "pos",
-										"value": "core.MissionInfo().enemyPositions[clearedPoints]"
-									}, {
-										"name": "fight",
-										"value": "false"
-									}, {
-										"name": "scriptName",
-										"value": "Common.move"
-									} ],
-									"scriptName": "Common.move"
-								}, {
-									"children": [],
-									"id": "fpfLAXGkFjpnYshqhR25EXeZ5KciSqCQ",
-									"nodeType": "wait",
-									"parameters": [ {
-										"name": "time",
-										"value": 5
-									} ]
-								} ],
-								"id": "NDOb251LVYQOKWanNKtlIKlEpQLQ8P7L",
-								"nodeType": "sequence",
-								"parameters": []
-							} ],
-							"id": "xhX5cHVL2ss7d7Qv5X9OBZ3dUW6cDd8X",
-							"nodeType": "parallel",
-							"parameters": [ {
-								"name": "mode",
-								"value": "all-success"
-							} ]
-						}, {
-							"children": [],
-							"id": "fre72Z1yMaDoXjZsUl4V6s6ChlCdXjCy",
-							"nodeType": "success",
-							"parameters": []
-						} ],
-						"id": "f5MkFyh2asrHdDtbfcqwmRB5JsRy64BB",
-						"nodeType": "luaCondition",
+						"children": [],
+						"id": "af1TrveReB00rTvDcwq0oikHJbxPfvoH",
+						"nodeType": "luaCommand",
 						"parameters": [ {
-							"name": "expression",
-							"value": "clearedPoints <= #core.MissionInfo().enemyPositions"
+							"name": "var",
+							"value": "cleared"
 						}, {
-							"name": "repeat",
+							"name": "value",
 							"value": "true"
-						} ]
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
 					} ],
-					"id": "dkgs4rGu0zdMPmt5Eq3WC7bfGyPyvOnC",
+					"id": "iuwzSoi5fIoNLtPGL1XX53mhiKO6WgzR",
 					"nodeType": "luaCondition",
 					"parameters": [ {
 						"name": "expression",
-						"value": "clearedPoints == nil"
+						"value": "#enemyPositions > 0"
 					}, {
 						"name": "repeat",
 						"value": "true"
@@ -390,43 +270,48 @@
 				}, {
 					"children": [ {
 						"children": [],
-						"id": "FZIkVNODIRDi5oW63J4I6x9DmQp4jBlP",
-						"nodeType": "reference",
+						"id": "0zkfAptdgy8ebR3ILCpnFYORZ8Cw1Fmz",
+						"nodeType": "luaCommand",
 						"parameters": [ {
-							"name": "behaviourName",
-							"value": "nota_seryma._follow"
+							"name": "Targets",
+							"value": "hillPositions"
+						}, {
+							"name": "fight",
+							"value": "true"
+						}, {
+							"name": "scriptName",
+							"value": "nota_seryma.scatter"
 						} ],
-						"referenceInputs": [ {
-							"name": "Commander",
-							"value": "Tank"
+						"scriptName": "nota_seryma.scatter"
+					}, {
+						"children": [],
+						"id": "UjiY3c041y7I7xgLKiGop1e2hkaeffBj",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "condition",
+							"value": "false"
+						}, {
+							"name": "scriptName",
+							"value": "waitUntil"
 						} ],
-						"referenceOutputs": []
+						"scriptName": "waitUntil"
 					} ],
-					"id": "XyihLZCpR7U3WbCwCv5HRx4cWTavTmH7",
-					"nodeType": "repeat",
-					"parameters": []
+					"id": "V7CfmhIo3n2mgNe2dNItmpcoCoL1k03F",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "cleared"
+					}, {
+						"name": "repeat",
+						"value": "true"
+					} ]
 				} ],
-				"id": "0qHLKS0uD8mDQMRPfzSxdlqrQ4h192iR",
+				"id": "iX4tlXKllhpoiqQ1iW80jwlEvKsZgEF8",
 				"nodeType": "roleSplit",
 				"parameters": [ {
 					"name": "mode",
-					"value": "any-success"
+					"value": "all-success"
 				} ]
-			}, {
-				"children": [],
-				"id": "0zkfAptdgy8ebR3ILCpnFYORZ8Cw1Fmz",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "Targets",
-					"value": "positions"
-				}, {
-					"name": "fight",
-					"value": "false"
-				}, {
-					"name": "scriptName",
-					"value": "nota_seryma.scatter"
-				} ],
-				"scriptName": "nota_seryma.scatter"
 			} ],
 			"id": "U7VrOb5xKV8bCZbgUwLRmwFKXw95XlJL",
 			"nodeType": "sequence",
@@ -439,7 +324,7 @@
 			"value": "hills == nil"
 		}, {
 			"name": "repeat",
-			"value": "false"
+			"value": "true"
 		} ]
 	}
 }
