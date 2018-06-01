@@ -18,14 +18,14 @@
 			"height": 106,
 			"title": "Capture hills",
 			"width": 191,
-			"x": 1230,
+			"x": 1228,
 			"y": 160
 		},
 		"81uZwZa8ze7UtlhDopvaIEpeuIT1EVpp": {
 			"height": 72,
 			"title": "waitUntil",
 			"width": 150,
-			"x": 732,
+			"x": 730,
 			"y": -190
 		},
 		"TKmFXfatjntEeYp7xfU0Cl0lgAbMQsEj": {
@@ -46,42 +46,42 @@
 			"height": 94,
 			"title": "store",
 			"width": 305,
-			"x": 730,
+			"x": 728,
 			"y": -359
 		},
 		"UjiY3c041y7I7xgLKiGop1e2hkaeffBj": {
 			"height": 72,
 			"title": "waitUntil",
 			"width": 150,
-			"x": 1235,
+			"x": 1233,
 			"y": 285
 		},
 		"V7CfmhIo3n2mgNe2dNItmpcoCoL1k03F": {
 			"height": 90,
 			"title": "Path is clear",
 			"width": 251,
-			"x": 912,
+			"x": 910,
 			"y": 165
 		},
 		"YnJ9t749xvF4vUhNNagTliRlmw5LWqiP": {
 			"height": 54,
 			"title": "Could this be done without copy pasting the same node?",
 			"width": 440,
-			"x": 1350,
+			"x": 1348,
 			"y": 63
 		},
 		"aPLp51uoZ4ZDrHUNwRJuvR1nTztGDoxN": {
 			"height": 94,
 			"title": "store",
 			"width": 442,
-			"x": 725,
+			"x": 723,
 			"y": -452
 		},
 		"af1TrveReB00rTvDcwq0oikHJbxPfvoH": {
 			"height": 92,
 			"title": "store",
 			"width": 131,
-			"x": 1214,
+			"x": 1212,
 			"y": 19
 		},
 		"bJXXyWWDerk61wRXZEsRbak1dVeNGL3A": {
@@ -95,42 +95,42 @@
 			"height": 94,
 			"title": "store",
 			"width": 305,
-			"x": 731,
+			"x": 729,
 			"y": -276
 		},
 		"iX4tlXKllhpoiqQ1iW80jwlEvKsZgEF8": {
 			"height": 70,
 			"title": "roleSplit",
 			"width": 202,
-			"x": 649,
+			"x": 647,
 			"y": -46
 		},
 		"iuwzSoi5fIoNLtPGL1XX53mhiKO6WgzR": {
 			"height": 90,
 			"title": "Clear first enemy with bear",
 			"width": 251,
-			"x": 915,
+			"x": 913,
 			"y": -54
 		},
 		"jvGtLgW3KIIIhFb6XXM05o40tgEwCk8w": {
 			"height": 90,
 			"title": "ram turret",
 			"width": 191,
-			"x": 1410,
+			"x": 1408,
 			"y": -121
 		},
 		"mW0pLlf37SZn8xrqLfNeGblZPRl2hMcQ": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1219,
+			"x": 1217,
 			"y": -109
 		},
 		"oRZXqRH8z11rQs1MQfPjYRlUp8pmjan8": {
 			"height": 92,
 			"title": "store",
 			"width": 131,
-			"x": 1404,
+			"x": 1402,
 			"y": -39
 		}
 	},

@@ -18,8 +18,8 @@ end
 return function(hills)
     local positions = {}
 
-    for i, hill in pairs(hills) do
-        table.insert(positions, hill.center)
+	for i = 1, #hills do
+		positions[i] = hills[i].center
 	end 
 	
 	return positions
