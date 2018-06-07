@@ -6,7 +6,7 @@ local sensorInfo = {
 	license = "notAlicense",
 }
 
-local EVAL_PERIOD_DEFAULT = 0 -- acutal, no caching
+local EVAL_PERIOD_DEFAULT = -1 -- acutal, no caching
 
 function getInfo()
 	return {
@@ -48,7 +48,7 @@ return function(gridSize, ratio)
 	-- 	end
 	-- end
 
-	local hills = Aggregate(highPoints)
+	local hills = Aggregate(highPoints, true)
 
 	--  SizeX = highPoints.sizeX
     --  SizeZ = highPoints.sizeZ
