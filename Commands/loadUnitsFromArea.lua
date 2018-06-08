@@ -157,7 +157,7 @@ function Run(self, units, parameter)
 		local capacity = getSingleCapacity(transporter)
 
 		-- all transports are full -- most probably an issue with order queue
-		if not transporter or capacity == 0 then return FAILURE end
+		if not transporter or capacity == 0 then return RUNNING end
 		
 
 		for _ = 1, capacity do
