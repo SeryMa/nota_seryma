@@ -21,14 +21,6 @@ VFS.Include(modules.attach.data.path .. modules.attach.data.head) -- attach lib 
 -- get other madatory dependencies
 attach.Module(modules, "message") -- communication backend load
 
--- @description return current wind statistics
-function endGame()
-    message.SendRules({
-        subject = "CTP_playerTriggeredGameEnd",
-        data = {},
-    })
-end
-
 
 -- constants
 local THRESHOLD_STEP = 25
@@ -55,6 +47,8 @@ function getSingleCapacity(unitID)
 	--local capacity = defId and 0 or UnitDefs[defId].transportCapacity
 	local capacity = 0
 	if defID and UnitDefs[defID] and UnitDefs[defID].isTransport then
+		-- either the transporter is already carrying or is going to carry
+		-- (no interference of other commands is expected)
 		capacity = UnitDefs[defID].transportCapacity
 					- #SpringGetTransportedUnits(unitID)
 					- SpringGetUnitCommands(unitID, 0)
@@ -74,9 +68,7 @@ end
 
 function getFreeTransporter(units)
 	for i = 1, #units do
-		-- either the transporter is already carrying or is going to carry
-		-- (no interference of other commands is expected)
-		local realCapacity = getSingleCapacity(units[i]) - SpringGetUnitCommands(units[i], 0)
+		local realCapacity = getSingleCapacity(units[i])
 
 		if realCapacity > 0 then
 			return units[i], realCapacity
@@ -91,14 +83,47 @@ function issueLoadingCommandToUnit(unitID, area)
 end
 
 local targets
+local init
 function Run(self, units, parameter)
-	if not targets then targets = getTargets(parameter.Area) end
+	if not init then
+		init = true
+		targets = {}
+		local unitsInArea = getTargets(parameter.Area)
+		
+		for i = 1, #unitsInArea do
+			local potentialTarget = unitsInArea[i]
+			local colide = false 
+			for j = 1, #units do
+				if potentialTarget == units[j] then
+					-- we have transports inside rescue area
+					colide = true
+				end
+			end
+
+			if not colide then targets[#targets+1] = potentialTarget end
+		end
+	end
+
+	local debug = true
+    if (debug and Script.LuaUI('circle_update')) then
+		if (debug and Script.LuaUI('circle_init')) then Script.LuaUI.circle_init() end
+    
+		for i = 1, #targets do
+			local x, y, z = Spring.GetUnitPosition(targets[i])
+			Script.LuaUI.circle_update(
+				i,
+				{ x=x,
+					y=y,
+					z=z,
+					radius=15,
+					r = 0,
+					g = 0,
+					b = 100,
+				})
+        end
+    end
 
 	local targetCount = math.min(#targets, getCapacity(units))
-
-	Spring.Echo("Capacity: " .. getCapacity(units))
-	Spring.Echo("Targets: " .. #targets)
-	Spring.Echo("TarCount: " .. targetCount)
 
 	if targetCount == 0 then
 		for i = 1, #units do
@@ -112,27 +137,23 @@ function Run(self, units, parameter)
 	end
 
 	-- give command to all units
-	local i = 0
-	while i < targetCount do
-		local transporter, capacity = getFreeTransporter(units)
+	local i = 1
+	while i <= targetCount do
+		local transporter = units[i]
+		local capacity = getSingleCapacity(transporter)
 
 		-- all transports are full -- most probably an issue with order queue
-		if not transporter then return FAILURE end
+		if not transporter or capacity == 0 then return FAILURE end
+		
 
-		local ts = {}
 		for _ = 1, capacity do
 			target = table.remove(targets)
 
-			SpringGiveOrderToUnit(transporter, CMD.LOAD_UNITS, {target}, {})
+			SpringGiveOrderToUnit(transporter, CMD.LOAD_UNITS, {target}, {"shift"})
 		end
 
 		i = i + capacity
 	end
-
-	-- -- check whether all units fullfilled their commands
-	-- for i = 1, #units do
-	-- 	if SpringGetUnitCommands(units[i], 0) > 0 then return RUNNING end
-	-- end
 
 	return RUNNING
 end
@@ -140,4 +161,5 @@ end
 
 function Reset(self)
 	targets = nil
+	init = false
 end
