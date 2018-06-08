@@ -36,7 +36,7 @@ end
 local function GetRange(teamID)
 	local IDs = Spring.GetTeamUnitsCounts(teamID)
 
-	local max = nil
+	local max = 0
 
 	for ID,_ in pairs(IDs) do
 		if ID ~= "n" and ID ~= "unknown" and max < UnitDefs[ID].maxWeaponRange then
@@ -44,7 +44,8 @@ local function GetRange(teamID)
 		end
 	end
 
-	return max and max or 1000 -- hard-coded threshold
+	if max > 1000 then return max
+	else return 1000 end
 end
 
 -- @description return safe spaces found on map

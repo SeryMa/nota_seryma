@@ -32,7 +32,7 @@ end
 -- speedups
 
 
--- @description return path as points from - to
+-- @description return path as points from navGraph leading 'to'
 return function(navGraph, to, debug)
 	local to = getNearestNavPoint(navGraph, to)
 

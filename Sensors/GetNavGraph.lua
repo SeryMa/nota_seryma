@@ -135,8 +135,12 @@ function getNearestSample(sample, point)
 
 	local dist = nil
 	local coords = nil
+
+	local num = 0
+
 	for x = 1, SizeX, stepX do
 		for z = 1, SizeZ, stepZ do
+			num = num+1
 			if sample[x] ~= nil and sample[x][z] ~= nil then
 				local newDist = sample[x][z].smooth:Distance(point)
 				if not coords or newDist < dist then
