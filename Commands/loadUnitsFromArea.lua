@@ -55,6 +55,11 @@ function getSingleCapacity(unitID)
 	if defID and UnitDefs[defID] and UnitDefs[defID].isTransport then
 		-- either the transporter is already carrying or is going to carry
 		-- (no interference of other commands is expected)
+
+		-- Spring.Echo("Max c: " .. UnitDefs[defID].transportCapacity)
+		-- Spring.Echo("- laoded " .. #SpringGetTransportedUnits(unitID))
+		-- Spring.Echo("- comms " .. SpringGetUnitCommands(unitID, 0))
+
 		capacity = UnitDefs[defID].transportCapacity
 					- #SpringGetTransportedUnits(unitID)
 					- SpringGetUnitCommands(unitID, 0)
@@ -72,12 +77,12 @@ function getCapacity(units)
 	return capacity
 end
 
-function getFreeTransporter(units)
-	for i = 1, #units do
+function getFreeTransporter(units, lastIndex)
+	for i = lastIndex, #units do
 		local realCapacity = getSingleCapacity(units[i])
 
 		if realCapacity > 0 then
-			return units[i], realCapacity
+			return units[i], realCapacity, i+1
 		end
 	end
 
@@ -139,6 +144,10 @@ function Run(self, units, parameter)
 
 	local targetCount = math.min(#targets, getCapacity(units))
 
+	-- Spring.Echo("Selected: " .. targetCount)
+	-- Spring.Echo("T " .. #targets)
+	-- Spring.Echo("C " .. getCapacity(units))
+
 	if targetCount == 0 then
 		for i = 1, #units do
 			if SpringGetUnitCommands(units[i], 0) ~= 0 then
@@ -151,14 +160,17 @@ function Run(self, units, parameter)
 	end
 
 	-- give command to all units
-	local i = 1
-	while i <= targetCount do
-		local transporter = units[i]
-		local capacity = getSingleCapacity(transporter)
+	local i = 0
+	local transporterIndex = 1
+	while i < targetCount do
+		-- local transporter = units[i+1]
+		-- local capacity = getSingleCapacity(transporter)
+
+		local transporter, capacity, foundIndex = getFreeTransporter(units, transporterIndex)
+		transporterIndex = foundIndex
 
 		-- all transports are full -- most probably an issue with order queue
-		if not transporter or capacity == 0 then return RUNNING end
-		
+		if not transporter or capacity == 0 then return FAILURE end
 
 		for _ = 1, capacity do
 			target = table.remove(targets)
