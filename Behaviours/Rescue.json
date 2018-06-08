@@ -1,6 +1,36 @@
 {
 	"additionalNodes": [ {
 		"children": [],
+		"id": "1RlouSeAASd2lCa3ryELJ1rZzVBQjGEN",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "navGraph"
+		}, {
+			"name": "value",
+			"value": "nota_seryma.GetNavGraph(three, p)"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
+		"id": "sL9iJOY2CGbwtVPv5w7X8iKQV9b1S8rd",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "threathMap"
+		}, {
+			"name": "value",
+			"value": "nota_seryma.GetSafeSpace(18, 1, 0.5)"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
 		"id": "SjzRb8DchlZ0YEv1B19rztqoh7HmNJhQ",
 		"nodeType": "reference",
 		"parameters": [ {
@@ -20,21 +50,6 @@
 		"referenceOutputs": []
 	}, {
 		"children": [],
-		"id": "1RlouSeAASd2lCa3ryELJ1rZzVBQjGEN",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "navGraph"
-		}, {
-			"name": "value",
-			"value": "nota_seryma.GetNavGraph(three, p)"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
-	}, {
-		"children": [],
 		"id": "aTyMHZ8A0GzkNKB7fBpuYiSkoLQtZW2Y",
 		"nodeType": "luaCommand",
 		"parameters": [ {
@@ -43,21 +58,6 @@
 		}, {
 			"name": "value",
 			"value": "rescueArea.radius/2"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
-	}, {
-		"children": [],
-		"id": "sL9iJOY2CGbwtVPv5w7X8iKQV9b1S8rd",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "threathMap"
-		}, {
-			"name": "value",
-			"value": "nota_seryma.GetSafeSpace(18, 1, 0.5)"
 		}, {
 			"name": "scriptName",
 			"value": "store"
@@ -94,11 +94,11 @@
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 284,
+			"x": 285,
 			"y": -98
 		},
 		"QN642x49YxAlnFrtGkzLEu97G7dXq2oF": {
-			"height": 72,
+			"height": 92,
 			"title": "nota_seryma.loadUnitsFromArea",
 			"width": 291,
 			"x": 754,
@@ -157,7 +157,7 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 528,
+			"x": 529,
 			"y": 63
 		},
 		"sL9iJOY2CGbwtVPv5w7X8iKQV9b1S8rd": {
@@ -224,6 +224,9 @@
 					"name": "Area",
 					"value": "extractArea"
 				}, {
+					"name": "SafeArea",
+					"value": "rescueArea"
+				}, {
 					"name": "scriptName",
 					"value": "nota_seryma.loadUnitsFromArea"
 				} ],
@@ -234,7 +237,7 @@
 				"nodeType": "luaCommand",
 				"parameters": [ {
 					"name": "Area",
-					"value": "core.MissionInfo().safeArea"
+					"value": "rescueArea"
 				}, {
 					"name": "scriptName",
 					"value": "nota_seryma.dropUnitsIntoArea"

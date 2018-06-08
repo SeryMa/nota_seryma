@@ -68,7 +68,7 @@ end
 function issueUnLoadingCommandToUnit(unitID, area)
 	SpringGiveOrderToUnit(unitID, CMD.UNLOAD_UNITS, {area.center.x, area.center.y, area.center.z, area.radius}, {})
 	
-	SpringGiveOrderToUnit(unitID, CMD.MOVE, {area.center.x - area.radius - math.random(-100, 200), area.center.y, area.center.z + area.radius + math.random(-100, 200)}, {"shift"})
+	SpringGiveOrderToUnit(unitID, CMD.MOVE, {area.center.x - area.radius - math.random(-150, 250), area.center.y, area.center.z + area.radius + math.random(-150, 250)}, {"shift"})
 end
 
 

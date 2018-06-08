@@ -9,6 +9,12 @@ function getInfo()
 				componentType = "editBox",
 				defaultValue = "",
 			},
+			{ 
+				name = "SafeArea",
+				variableType = "expression",
+				componentType = "editBox",
+				defaultValue = "",
+			},
 		}
 	}
 end
@@ -89,12 +95,20 @@ function Run(self, units, parameter)
 		init = true
 		targets = {}
 		local unitsInArea = getTargets(parameter.Area)
-		
+		local safeUnits = getTargets(parameter.SafeArea)
+
 		for i = 1, #unitsInArea do
 			local potentialTarget = unitsInArea[i]
 			local colide = false 
 			for j = 1, #units do
 				if potentialTarget == units[j] then
+					-- we have transports inside rescue area
+					colide = true
+				end
+			end
+
+			for j = 1, #safeUnits do
+				if potentialTarget == safeUnits[j] then
 					-- we have transports inside rescue area
 					colide = true
 				end
