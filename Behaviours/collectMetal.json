@@ -1,0 +1,43 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 228
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "safeSpots"
+	} ],
+	"outputs": [],
+	"properties": {
+		"YnBGKctABAylPnzEIqw2Zz1X8JZbWxVm": {
+			"height": 92,
+			"title": "nota_seryma.collectMetal",
+			"width": 223,
+			"x": 276,
+			"y": 6
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [],
+		"id": "YnBGKctABAylPnzEIqw2Zz1X8JZbWxVm",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "safePoints",
+			"value": "safeSpots"
+		}, {
+			"name": "safeDistance",
+			"value": "1000"
+		}, {
+			"name": "scriptName",
+			"value": "nota_seryma.collectMetal"
+		} ],
+		"scriptName": "nota_seryma.collectMetal"
+	}
+}

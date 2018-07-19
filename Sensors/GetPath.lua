@@ -39,7 +39,7 @@ return function(navGraph, to, debug)
 	local path = {}
 
 	while to.prev do
-		path[#path+1] = to
+		path[#path+1] = to.smooth
 		to = to.prev
 	end
 

@@ -1,7 +1,7 @@
 function getInfo()
 	return {
 		onNoUnits = SUCCESS, -- instant success
-		tooltip = "Moves units along given path.",
+		tooltip = "Loads given units",
 		parameterDefs = {
 			-- { 
 			-- 	name = "Units",

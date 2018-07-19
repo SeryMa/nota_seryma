@@ -1,0 +1,9 @@
+{
+	"types": [ {
+		"name": "armpeep"
+	}, {
+		"name": "armseer"
+	}, {
+		"name": "armspy"
+	} ]
+}

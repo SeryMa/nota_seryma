@@ -14,6 +14,12 @@ function getInfo()
 				variableType = "expression",
 				componentType = "editBox",
 				defaultValue = "false",
+			},
+			{ 
+				name = "distanceThreshold",
+				variableType = "expression",
+				componentType = "editBox",
+				defaultValue = "100",
 			}
 		}
 	}
@@ -56,7 +62,8 @@ end
 function Run(self, units, parameter)
 	local positions = parameter.Targets -- array of positions
 	local fight = parameter.fight -- boolean
-	
+	local distanceThreshold = parameter.distanceThreshold 
+
 	-- pick the spring command implementing the move
 	local cmdID = CMD.MOVE
 	if (fight) then cmdID = CMD.FIGHT end
@@ -71,7 +78,7 @@ function Run(self, units, parameter)
 		local position = positions[1 + i%#positions]
 		local unit = units[1 + i%#units]
 
-		if Distance(position, Vec3(GetUnitPosition(unit))) < THRESHOLD_DEFAULT then
+		if Distance(position, Vec3(GetUnitPosition(unit))) < distanceThreshold then
 			done = done + 1
 		else
 			pos = Vec3(position.x, position.y, position.z)
@@ -80,7 +87,7 @@ function Run(self, units, parameter)
 	end
 
 	-- once 90% of units arrives to given destination declare SUCCESS
-	if done > 0.9*#units then return SUCCESS
+	if done > 0.9 * #units then return SUCCESS
 	else return RUNNING
 	end
 end
