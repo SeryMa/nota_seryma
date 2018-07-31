@@ -22,9 +22,7 @@ local US = Spring.GetMyTeamID()
 local THEM = 1 -- couldn't figure how to get this number properly...
 
 -- @description return safe spaces found on map
-return function(line, debug)
-	local currentInfo = getIntel()
-	
+return function(line, currentInfo, debug)
 	local lineInfo
 	if line == "Top" or line == "top" then lineInfo = currentInfo.corridors.Top.points
 	elseif line == "Middle" or line == "mid" then lineInfo = currentInfo.corridors.Middle.points

@@ -93,14 +93,6 @@
 		"scriptName": "nota_seryma.BuyStuff"
 	}, {
 		"children": [],
-		"id": "1lU4pvAskh07vAE7xALjUfy2TolE7pri",
-		"nodeType": "wait",
-		"parameters": [ {
-			"name": "time",
-			"value": 5
-		} ]
-	}, {
-		"children": [],
 		"id": "nWJw4MTvhlEL1UHlIYDjJgjNlxjT9Qn8",
 		"nodeType": "luaCommand",
 		"parameters": [ {
@@ -114,6 +106,14 @@
 			"value": "nota_seryma.UpgradeLine"
 		} ],
 		"scriptName": "nota_seryma.UpgradeLine"
+	}, {
+		"children": [],
+		"id": "1lU4pvAskh07vAE7xALjUfy2TolE7pri",
+		"nodeType": "wait",
+		"parameters": [ {
+			"name": "time",
+			"value": 5
+		} ]
 	} ],
 	"additionalParameters": {
 		"root": {
@@ -128,63 +128,63 @@
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 714,
+			"x": 713,
 			"y": 335
 		},
 		"4cCwj2m2eLTRHTMzIJNh3YjaTsX1gBPn": {
 			"height": 90,
 			"title": "should restart behaviour",
 			"width": 235,
-			"x": 975,
+			"x": 974,
 			"y": 105
 		},
 		"4xNuXz1kpKyxgZJmvHRRFwzMTsbOJumF": {
 			"height": 54,
 			"title": "failure",
 			"width": 131,
-			"x": 1410,
+			"x": 1409,
 			"y": 203
 		},
 		"5UzfLsqpmTfhH0kpswQFhezP7MCPLARf": {
 			"height": 94,
 			"title": "store",
-			"width": 310,
-			"x": 1004,
+			"width": 386,
+			"x": 1003,
 			"y": -397
 		},
 		"6EU704Cx6E27HaENz44YQ820v31kiUxx": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 574,
+			"x": 573,
 			"y": 44
 		},
 		"6raXJDTFBExu8fHLlBqXy4iVLygdG86b": {
 			"height": 94,
 			"title": "store",
 			"width": 512,
-			"x": 1009,
+			"x": 1008,
 			"y": -151
 		},
 		"7ElMcncrno1nrFMuvJvn6obiDMTcWlOt": {
 			"height": 70,
 			"title": "roleSplit",
 			"width": 202,
-			"x": 711,
+			"x": 710,
 			"y": 271
 		},
 		"BO3LH9a0bispTd7tyAXUboxHdYqgNTqY": {
 			"height": 94,
 			"title": "store",
 			"width": 201,
-			"x": 1008,
+			"x": 1007,
 			"y": -490
 		},
 		"G175dMs12Wv7k9aFUoD1e7LOxRyoUgYJ": {
 			"height": 172,
 			"title": "defensive",
 			"width": 430,
-			"x": 1724,
+			"x": 1723,
 			"y": 209
 		},
 		"GNjT1G3IGLta5c0Gy17rYD8RFM0AuTOS": {
@@ -198,105 +198,105 @@
 			"height": 94,
 			"title": "store",
 			"width": 212,
-			"x": 434,
-			"y": -420
+			"x": 165,
+			"y": -439
 		},
 		"Khqmi7NwbYK8XM3vnDV75QlSvgFiQyCB": {
 			"height": 94,
 			"title": "store",
 			"width": 512,
-			"x": 1015,
+			"x": 1014,
 			"y": -65
 		},
 		"NgYCwzVyuTjMN7GUIDRPEsidbxO8XZsJ": {
 			"height": 94,
 			"title": "store",
-			"width": 325,
-			"x": 1007,
+			"width": 405,
+			"x": 1006,
 			"y": -311
 		},
 		"UA0Acm8NZYxZzvPwUuvQ8AMiHqBb0zhV": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1246,
+			"x": 1245,
 			"y": 85
 		},
 		"VOdBSDGSH5FwaN6Jc0GEf8pjDrpGAmqe": {
 			"height": 112,
 			"title": "nota_seryma.scatter",
 			"width": 525,
-			"x": 1697,
+			"x": 1696,
 			"y": 629
 		},
 		"WtCslcb8HMxFxbAxl0X9DP9PrigokMpy": {
 			"height": 94,
 			"title": "Computing navigation graph for faster pathfinding",
 			"width": 752,
-			"x": 434,
-			"y": -510
+			"x": 165,
+			"y": -529
 		},
 		"XiL9qBBYkRXGxQDHTDsnxxDMoWhDXO9M": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 446,
-			"x": 1216,
+			"x": 1215,
 			"y": 637
 		},
 		"Y6bWIFisQD4L3HFfVixAbx6XaqPQryBe": {
 			"height": 94,
 			"title": "Computing threath map",
 			"width": 752,
-			"x": 437,
-			"y": -599
+			"x": 168,
+			"y": -618
 		},
 		"aTQeUczxkuS57uaDyTLeSogRz3b2iksR": {
 			"height": 151,
 			"title": "Top",
 			"width": 293,
-			"x": 1701,
+			"x": 1700,
 			"y": 734
 		},
 		"b5mOpbxzeoId3VnuxqslXbVX6uNgQ9C1": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 538,
+			"x": 537,
 			"y": 262
 		},
 		"baVLKiH2NiIHmFZAYk7uLymH64ECOUbw": {
 			"height": 112,
 			"title": "nota_seryma.scatter",
 			"width": 525,
-			"x": 1269,
+			"x": 1268,
 			"y": 518
 		},
 		"cCjlrzz4zTxUWZn7Yeb1nkkIW1jUajek": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1242,
+			"x": 1241,
 			"y": 145
 		},
 		"gfnaqQkmhoYhwYoA13gcw5ASldky8f1J": {
 			"height": 60,
 			"title": "Farks",
 			"width": 143,
-			"x": 1065,
+			"x": 1064,
 			"y": 639
 		},
 		"iU6k5cUAWB532sqpG8hAqurWFkyrdJGK": {
 			"height": 60,
 			"title": "readIntel",
 			"width": 143,
-			"x": 814,
+			"x": 813,
 			"y": -54
 		},
 		"ifzlDdUiBq7SjGJ00R9LK6eydrhpJ2ML": {
 			"height": 94,
 			"title": "store",
-			"width": 325,
-			"x": 1006,
+			"width": 402,
+			"x": 1005,
 			"y": -232
 		},
 		"izYbyeVSFuAVHoGS3IlxoXd9XUNZ3SZq": {
@@ -310,7 +310,7 @@
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 1411,
+			"x": 1410,
 			"y": 140
 		},
 		"nWJw4MTvhlEL1UHlIYDjJgjNlxjT9Qn8": {
@@ -324,7 +324,7 @@
 			"height": 72,
 			"title": "nota_seryma.BuyStuff",
 			"width": 201,
-			"x": 746,
+			"x": 745,
 			"y": 40
 		},
 		"pWmMzjEIo7Tw4wTbcSIPJAXDFrYSYSf8": {
@@ -338,42 +338,42 @@
 			"height": 60,
 			"title": "Transports",
 			"width": 150,
-			"x": 1079,
+			"x": 1078,
 			"y": 414
 		},
 		"pwqoVmgisdH5rkHlZilLVl8yHuQRfea7": {
 			"height": 60,
 			"title": "Spies",
 			"width": 150,
-			"x": 1073,
+			"x": 1072,
 			"y": 536
 		},
 		"sJLnmsN4k82s4ujwKlNcBel36SbOq3nt": {
 			"height": 63,
 			"title": "init",
 			"width": 143,
-			"x": 250,
-			"y": -580
+			"x": -18,
+			"y": -599
 		},
 		"tOi2IRNHTPlKMkXXzrKujaPiA0rFXaN9": {
 			"height": 60,
 			"title": "Fighters",
 			"width": 143,
-			"x": 1075,
+			"x": 1074,
 			"y": 274
 		},
 		"v4t1CdkFTXDa4Xvvmnx9kpXzBh8MbvDr": {
 			"height": 235,
 			"title": "Top",
 			"width": 430,
-			"x": 1277,
+			"x": 1276,
 			"y": 249
 		},
 		"x6NorXwGqqHWSYrMhJv8NsY7yiHZ3drw": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 594,
+			"x": 593,
 			"y": -38
 		}
 	},
@@ -420,7 +420,7 @@
 						"value": "top"
 					}, {
 						"name": "value",
-						"value": "nota_seryma.readLine(\"Top\", true)"
+						"value": "nota_seryma.readLine(\"Top\", missionInfo, true)"
 					}, {
 						"name": "scriptName",
 						"value": "store"
@@ -435,7 +435,7 @@
 						"value": "bot"
 					}, {
 						"name": "value",
-						"value": "nota_seryma.readLine(\"Bottom\", true)"
+						"value": "nota_seryma.readLine(\"Bottom\", missionInfo, true)"
 					}, {
 						"name": "scriptName",
 						"value": "store"
@@ -450,7 +450,7 @@
 						"value": "mid"
 					}, {
 						"name": "value",
-						"value": "nota_seryma.readLine(\"Middle\", true)"
+						"value": "nota_seryma.readLine(\"Middle\", missionInfo, true)"
 					}, {
 						"name": "scriptName",
 						"value": "store"
