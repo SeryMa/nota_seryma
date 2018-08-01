@@ -494,7 +494,7 @@
 								"nodeType": "luaCondition",
 								"parameters": [ {
 									"name": "expression",
-									"value": "tacticalAdvantageOnAttack > 0.4"
+									"value": "tacticalAdvantageOnAttack > 0.8"
 								}, {
 									"name": "repeat",
 									"value": "true"

@@ -33,6 +33,7 @@ return function(line, currentInfo, debug)
 	end
 
 	local intel = {}
+	intel.Ours = {}
 
 	local ourLastStrong
 	local dangerZone = {}
@@ -53,13 +54,15 @@ return function(line, currentInfo, debug)
 		else
 			dangerZone[#dangerZone+1] = lineInfo[i]
 		end
+		
+		intel.Ours[#intel.Ours + 1] = lineInfo[i]
 	end
 
 			
 	for i = 1, #dangerZone do
 		local HP = Sensors.HPInArea({center = dangerZone[i].position, radius = 500})
 		
-		if HP.allied > 0 and 1.5 * HP.allied > HP.enemy then
+		if HP.allied > 0 and 5 * HP.allied > HP.enemy then
 			intel.lastOurs = dangerZone[i]
 			if i == #dangerZone then
 				intel.firstTheir = intel.firstTheirStrong

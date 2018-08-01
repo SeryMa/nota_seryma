@@ -43,7 +43,7 @@ local function Collect(unit)
 
 	-- only issue the command if the command queue is empty
 	if Spring.GetCommandQueue(unit, 0) < 1 then	
-		SpringGiveOrderToUnit(unit,  CMD.RECLAIM, {collectingSpot.x, collectingSpot.y, collectingSpot.z, 2*range}, {"shift"})		
+		SpringGiveOrderToUnit(unit,  CMD.RECLAIM, {collectingSpot.x, collectingSpot.y, collectingSpot.z, 0.5 * range}, {"shift"})		
 	end
 
 	-- local foreman = units[1]
@@ -116,18 +116,21 @@ function Run(self, units, parameter)
 
 	for i = 1, #units do
 		local unit = units[i]
-		local pos = Vec3(GetUnitPosition(unit))
-		local safePoint = getClosest(pos, parameter.safePoints)
 
-		-- if can see enemy, or the collecting unit is far away from base, return to it, else keep collecting
-		if canSeeEnemy(unit) or D(pos, safePoint) > parameter.safeDistance then
-			-- retreat to safe position
-			if (D(pos, safePoint) > 30) then
-				SpringGiveOrderToUnit(unit,  CMD.MOVE, {safePoint.x, safePoint.y, safePoint.z}, {})
+		if unit ~= nil then  
+			local pos = Vec3(GetUnitPosition(unit))
+			local safePoint = getClosest(pos, parameter.safePoints)
+
+			-- if can see enemy, or the collecting unit is far away from base, return to it, else keep collecting
+			if canSeeEnemy(unit) or D(pos, safePoint) > parameter.safeDistance then
+				-- retreat to safe position
+				if (D(pos, safePoint) > 30) then
+					SpringGiveOrderToUnit(unit,  CMD.MOVE, {safePoint.x, safePoint.y, safePoint.z}, {})
+				end
+			else
+				-- if safe => collect metal
+				Collect(unit)
 			end
-		else
-			-- if safe => collect metal
-			Collect(unit)
 		end
 	end
 	

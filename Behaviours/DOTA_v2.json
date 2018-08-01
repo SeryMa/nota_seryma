@@ -13,14 +13,14 @@
 			"height": 94,
 			"title": "store",
 			"width": 201,
-			"x": 971,
+			"x": 970,
 			"y": -253
 		},
 		"9M1stezo0uIyhFtxcrdt1B8qdjMiW51B": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 1039,
+			"x": 1038,
 			"y": 68
 		},
 		"CGErRbWSZHsNBcrFo42T1VIh8w53awp8": {
@@ -34,29 +34,29 @@
 			"height": 54,
 			"title": "failure",
 			"width": 131,
-			"x": 1786,
+			"x": 1785,
 			"y": 4
 		},
 		"D3wyRYvUh4vS0vavtqeRdQ6sJcgfGUUJ": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 431,
-			"x": 1312,
+			"x": 1311,
 			"y": -45
 		},
 		"E41s3L3XmO0HrscuaBRXVRqEqDjXRADJ": {
 			"height": 72,
 			"title": "nota_seryma.BuyStuff",
 			"width": 201,
-			"x": 2002,
+			"x": 2001,
 			"y": -65
 		},
 		"FjQpiiAkfFDpe1kBcPaeMnWB4sOUr9bJ": {
 			"height": 130,
 			"title": "ClearMid",
 			"width": 225,
-			"x": 816,
-			"y": 294
+			"x": 814,
+			"y": 178
 		},
 		"G8kJXWGbHL3wr64Pq0Y8cLlEzRveFiUa": {
 			"height": 60,
@@ -72,39 +72,46 @@
 			"x": 592,
 			"y": 68
 		},
+		"IpxJjSp0mlokFEGaSaFss6xMWK9PTRyU": {
+			"height": 115,
+			"title": "ClearBase",
+			"width": 230,
+			"x": 815,
+			"y": 302
+		},
 		"NInQw7cFRVVCbXwLQRqje6VysSqhK9uD": {
 			"height": 134,
 			"title": "ClearTop",
 			"width": 225,
-			"x": 809,
-			"y": 409
+			"x": 823,
+			"y": 428
 		},
 		"PXyKNGNW00WrdRVtYlTZUU62WKhIk5Dp": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1786,
+			"x": 1785,
 			"y": -60
 		},
 		"SQWHs1qqO6K3Bwx3zawV1jzkmU2VZbbJ": {
 			"height": 94,
 			"title": "store",
 			"width": 237,
-			"x": 966,
+			"x": 965,
 			"y": -154
 		},
 		"W0M59RURmuQ5aJl2x7bJZLJGEHMY5hOn": {
 			"height": 54,
 			"title": "failure",
 			"width": 131,
-			"x": 1040,
+			"x": 1039,
 			"y": 142
 		},
 		"bfyKERJjn0B0KpKg9Ax2h6fOhlaS3KVe": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 858,
+			"x": 857,
 			"y": 49
 		},
 		"ictPylwsprKFCs10Oohno9SSccY3XSo5": {
@@ -118,7 +125,7 @@
 			"height": 94,
 			"title": "store",
 			"width": 237,
-			"x": 2008,
+			"x": 2007,
 			"y": 78
 		},
 		"nZvVkXC4Kbe2hNlfVspoLQ7UKXt6nBDs": {
@@ -139,35 +146,35 @@
 			"height": 130,
 			"title": "ClearMid",
 			"width": 230,
-			"x": 814,
-			"y": 177
+			"x": 825,
+			"y": 576
 		},
 		"tclspI58EYeS5iNeEdBdwcvBzwLf9Ryo": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1066,
+			"x": 1065,
 			"y": -34
 		},
 		"uSbCSkOCLlJTQY1bAzONysJL5s81aY4Q": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 859,
+			"x": 858,
 			"y": 107
 		},
 		"xfqi4tbxEb7NvfXR6RstclspI58EYeS5": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 2014,
+			"x": 2013,
 			"y": 7
 		},
 		"zKddm8PrS4lkgjyavVTgeQnn1h9o1ONi": {
 			"height": 94,
 			"title": "store",
 			"width": 333,
-			"x": 1336,
+			"x": 1335,
 			"y": -144
 		}
 	},
@@ -334,19 +341,6 @@
 		}, {
 			"children": [ {
 				"children": [],
-				"id": "rZwfYQ86GcjZfYEyfSq8lcokWAu9PKK9",
-				"nodeType": "reference",
-				"parameters": [ {
-					"name": "behaviourName",
-					"value": "nota_seryma.ClearLine"
-				} ],
-				"referenceInputs": [ {
-					"name": "line",
-					"value": "\"Bottom\""
-				} ],
-				"referenceOutputs": []
-			}, {
-				"children": [],
 				"id": "FjQpiiAkfFDpe1kBcPaeMnWB4sOUr9bJ",
 				"nodeType": "reference",
 				"parameters": [ {
@@ -360,6 +354,16 @@
 				"referenceOutputs": []
 			}, {
 				"children": [],
+				"id": "IpxJjSp0mlokFEGaSaFss6xMWK9PTRyU",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_seryma.ClearBase"
+				} ],
+				"referenceInputs": [],
+				"referenceOutputs": []
+			}, {
+				"children": [],
 				"id": "NInQw7cFRVVCbXwLQRqje6VysSqhK9uD",
 				"nodeType": "reference",
 				"parameters": [ {
@@ -369,6 +373,19 @@
 				"referenceInputs": [ {
 					"name": "line",
 					"value": "\"Top\""
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "rZwfYQ86GcjZfYEyfSq8lcokWAu9PKK9",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_seryma.ClearLine"
+				} ],
+				"referenceInputs": [ {
+					"name": "line",
+					"value": "\"Bottom\""
 				} ],
 				"referenceOutputs": []
 			} ],

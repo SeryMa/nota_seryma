@@ -39,7 +39,7 @@
 			"value": "Units"
 		}, {
 			"name": "safeDistance",
-			"value": "1000"
+			"value": "500"
 		}, {
 			"name": "scriptName",
 			"value": "nota_seryma.collectMetal"
