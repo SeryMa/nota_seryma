@@ -36,7 +36,7 @@
 		"H1OP8SVwnLUPwQTBCHN0S1QyIhaYdRgg": {
 			"height": 94,
 			"title": "store",
-			"width": 392,
+			"width": 397,
 			"x": 1335,
 			"y": -364
 		},
@@ -64,7 +64,7 @@
 		"RxhCAhiHEtNkjNK1ormwcbgeYx06OR4n": {
 			"height": 172,
 			"title": "reference",
-			"width": 311,
+			"width": 353,
 			"x": 1171,
 			"y": 438
 		},
@@ -314,7 +314,7 @@
 							"value": "30"
 						}, {
 							"name": "targetPosition",
-							"value": "lineInfo.firstTheir.position"
+							"value": "lineInfo.firstTheirStrong.position"
 						}, {
 							"name": "Units",
 							"value": "bb.units.spies"

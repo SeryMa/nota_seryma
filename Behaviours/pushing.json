@@ -28,15 +28,15 @@
 			"height": 94,
 			"title": "store",
 			"width": 561,
-			"x": 1584,
-			"y": 197
+			"x": 1315,
+			"y": 194
 		},
 		"22C4ABV3iGwjw1htF8NM3xFkegk3t2na": {
 			"height": 96,
 			"title": "luaCondition",
 			"width": 250,
-			"x": 1671,
-			"y": 403
+			"x": 1601,
+			"y": 388
 		},
 		"92FVUJjE58niC8GwGeRhmU8BYonvXzfQ": {
 			"height": 72,
@@ -56,22 +56,22 @@
 			"height": 72,
 			"title": "waitUntil",
 			"width": 153,
-			"x": 2124,
-			"y": 986
+			"x": 2054,
+			"y": 971
 		},
 		"ChBqevqazFAv4DjouGwkJkONjNAKgxg9": {
 			"height": 94,
 			"title": "store",
 			"width": 336,
-			"x": 728,
+			"x": 729,
 			"y": -281
 		},
 		"Ec4e4cfiAMwm5u31GDozlAogvNC4t58G": {
 			"height": 59,
 			"title": "sequence",
 			"width": 143,
-			"x": 1931,
-			"y": 886
+			"x": 1861,
+			"y": 871
 		},
 		"HRulKLnJK93RPqM63pdiRsZedXvp80LA": {
 			"height": 60,
@@ -84,71 +84,57 @@
 			"height": 132,
 			"title": "nota_seryma.moveCustomGroup",
 			"width": 272,
-			"x": 2138,
-			"y": 503
+			"x": 2068,
+			"y": 488
 		},
 		"ILSYmKAqjIeprQ4RZI3yzikoNhUKW8Yq": {
 			"height": 88,
 			"title": "luaCondition",
 			"width": 619,
-			"x": 1179,
+			"x": 1181,
 			"y": 37
 		},
 		"LMjsV8Tb1o4UHovM9M1kt3rYmu5tGH1B": {
 			"height": 92,
 			"title": "store",
 			"width": 218,
-			"x": 736,
+			"x": 737,
 			"y": -67
-		},
-		"OxtLLbifTZnovObazQtLfxzLUeCL0aDX": {
-			"height": 70,
-			"title": "parallel",
-			"width": 202,
-			"x": 974,
-			"y": 412
 		},
 		"Qj73srZaYKUaN3iErYQELkcrTgKCbZHF": {
 			"height": 94,
 			"title": "store",
 			"width": 499,
-			"x": 1584,
-			"y": 289
+			"x": 1315,
+			"y": 286
 		},
 		"TvTrNBBTP1DphxeNriqhmHOb9EmIkHZn": {
 			"height": 70,
 			"title": "condition",
 			"width": 138,
-			"x": 729,
+			"x": 730,
 			"y": 43
 		},
 		"W7Jpo00FQSvwVAMHMowYeThr7K2B7Lky": {
 			"height": 132,
 			"title": "nota_seryma.moveCustomGroup",
 			"width": 272,
-			"x": 2123,
-			"y": 729
-		},
-		"Y4NnGjiCDRYMV6t3xZyMM6tMVQYrDbMa": {
-			"height": 60,
-			"title": "repeat",
-			"width": 131,
-			"x": 1231,
-			"y": 416
+			"x": 2053,
+			"y": 714
 		},
 		"Y4aFrNsojoZ6fm4YWeP2zdMD1OOAI4Po": {
 			"height": 92,
 			"title": "luaCondition",
 			"width": 258,
-			"x": 1389,
-			"y": 405
+			"x": 1321,
+			"y": 390
 		},
 		"ZRLBGr5lNyZ8iCHlcCIRbUhhiEzM7X2T": {
 			"height": 132,
 			"title": "nota_seryma.moveCustomGroup",
 			"width": 272,
-			"x": 2120,
-			"y": 860
+			"x": 2050,
+			"y": 845
 		},
 		"bfDoRrUCaiTuTQTmxmavIjUh9wanI9Ez": {
 			"height": 60,
@@ -161,15 +147,15 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 980,
+			"x": 982,
 			"y": 47
 		},
 		"h8VTTX3dIzNPQ7Tn2DRf6AkZxmF2z16h": {
 			"height": 59,
 			"title": "sequence",
 			"width": 143,
-			"x": 1933,
-			"y": 416
+			"x": 1863,
+			"y": 401
 		},
 		"k7mFtdU9JXWHLyW1OFQ1esuQeX1EWg7a": {
 			"height": 54,
@@ -182,36 +168,36 @@
 			"height": 59,
 			"title": "sequence",
 			"width": 143,
-			"x": 1941,
-			"y": 654
+			"x": 1871,
+			"y": 639
 		},
 		"lW9HkQ7elsTjpOFQRo9Y349kqf1Ujkzn": {
 			"height": 94,
 			"title": "store",
 			"width": 439,
-			"x": 1179,
+			"x": 1181,
 			"y": -61
 		},
 		"rvUpBVMxA4qgLNQt8saroVxj5fq6eGoJ": {
 			"height": 92,
 			"title": "store",
 			"width": 218,
-			"x": 731,
+			"x": 732,
 			"y": -174
 		},
 		"sGoB5vxfRMweqXmF85WgnaFmVUwWA8JJ": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1400,
-			"y": 302
+			"x": 1130,
+			"y": 296
 		},
 		"uU9DgDD0TrhAEIRCpohJH6IDpX4NZ8oh": {
 			"height": 92,
 			"title": "store",
 			"width": 218,
-			"x": 2124,
-			"y": 644
+			"x": 2054,
+			"y": 629
 		},
 		"vNznZyLAAmVkVQaITjn9iJPXED3ryffb": {
 			"height": 98,
@@ -224,15 +210,15 @@
 			"height": 94,
 			"title": "store",
 			"width": 439,
-			"x": 1180,
+			"x": 1182,
 			"y": -156
 		},
 		"wb0hvuKcRa0O4XIkBrDG6fKnzW0wKNSh": {
 			"height": 92,
 			"title": "store",
 			"width": 218,
-			"x": 2125,
-			"y": 406
+			"x": 2055,
+			"y": 391
 		},
 		"xG4rhNUIQpMcGru7rLJTRjuWeadavdEK": {
 			"height": 94,
@@ -245,8 +231,8 @@
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 1233,
-			"y": 303
+			"x": 966,
+			"y": 305
 		}
 	},
 	"roles": [ {
@@ -390,46 +376,36 @@
 				}, {
 					"children": [ {
 						"children": [ {
-							"children": [ {
-								"children": [],
-								"id": "1S47AaCXFkCKm4cQOFZwfO83kRnBVoEs",
-								"nodeType": "luaCommand",
-								"parameters": [ {
-									"name": "var",
-									"value": "tacticalAdvantageOnAttack"
-								}, {
-									"name": "value",
-									"value": "nota_seryma.TacticalAdvantageByHP(targetPosition, 1000, false)"
-								}, {
-									"name": "scriptName",
-									"value": "store"
-								} ],
-								"scriptName": "store"
+							"children": [],
+							"id": "1S47AaCXFkCKm4cQOFZwfO83kRnBVoEs",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "tacticalAdvantageOnAttack"
 							}, {
-								"children": [],
-								"id": "Qj73srZaYKUaN3iErYQELkcrTgKCbZHF",
-								"nodeType": "luaCommand",
-								"parameters": [ {
-									"name": "var",
-									"value": "tacticalAdvantageOnRetreat"
-								}, {
-									"name": "value",
-									"value": "nota_seryma.TacticalAdvantageByHP(attackPosition, 1000, false)"
-								}, {
-									"name": "scriptName",
-									"value": "store"
-								} ],
-								"scriptName": "store"
+								"name": "value",
+								"value": "nota_seryma.TacticalAdvantageByHP(targetPosition, 1000, false)"
+							}, {
+								"name": "scriptName",
+								"value": "store"
 							} ],
-							"id": "sGoB5vxfRMweqXmF85WgnaFmVUwWA8JJ",
-							"nodeType": "sequence",
-							"parameters": []
-						} ],
-						"id": "zUlJLHk7dj8ZN0T0GcQc25UMK1E1QNhy",
-						"nodeType": "repeat",
-						"parameters": []
-					}, {
-						"children": [ {
+							"scriptName": "store"
+						}, {
+							"children": [],
+							"id": "Qj73srZaYKUaN3iErYQELkcrTgKCbZHF",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "tacticalAdvantageOnRetreat"
+							}, {
+								"name": "value",
+								"value": "nota_seryma.TacticalAdvantageByHP(attackPosition, 500, false)"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						}, {
 							"children": [ {
 								"children": [ {
 									"children": [ {
@@ -462,7 +438,7 @@
 											"value": "relativeFormation"
 										}, {
 											"name": "fight",
-											"value": "false"
+											"value": "true"
 										}, {
 											"name": "scriptName",
 											"value": "nota_seryma.moveCustomGroup"
@@ -503,7 +479,7 @@
 											"value": "relativeFormation"
 										}, {
 											"name": "fight",
-											"value": "false"
+											"value": "true"
 										}, {
 											"name": "scriptName",
 											"value": "nota_seryma.moveCustomGroup"
@@ -539,7 +515,7 @@
 										"value": "relativeFormation"
 									}, {
 										"name": "fight",
-										"value": "false"
+										"value": "true"
 									}, {
 										"name": "scriptName",
 										"value": "nota_seryma.moveCustomGroup"
@@ -572,16 +548,13 @@
 								"value": "true"
 							} ]
 						} ],
-						"id": "Y4NnGjiCDRYMV6t3xZyMM6tMVQYrDbMa",
-						"nodeType": "repeat",
+						"id": "sGoB5vxfRMweqXmF85WgnaFmVUwWA8JJ",
+						"nodeType": "sequence",
 						"parameters": []
 					} ],
-					"id": "OxtLLbifTZnovObazQtLfxzLUeCL0aDX",
-					"nodeType": "parallel",
-					"parameters": [ {
-						"name": "mode",
-						"value": "all-success"
-					} ]
+					"id": "zUlJLHk7dj8ZN0T0GcQc25UMK1E1QNhy",
+					"nodeType": "repeat",
+					"parameters": []
 				} ],
 				"id": "TvTrNBBTP1DphxeNriqhmHOb9EmIkHZn",
 				"nodeType": "condition",

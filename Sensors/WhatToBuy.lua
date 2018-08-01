@@ -1,5 +1,5 @@
 local sensorInfo = {
-	name = "Buying ingo",
+	name = "Buying info",
 	desc = "Returns code of the best unit to buy.",
 	author = "SeryMa",
 	date = "2017-05-16",
@@ -34,7 +34,7 @@ return function(units)
 	
 	if 2 * mavericks <= all then return codes[1] end
 	if 6 * farks <= all then return codes[2] end
-	if 3 * infiltrators <= all then return codes[3] end
+	if infiltrators < 5 and 3 * infiltrators <= all then return codes[3] end
 
-	return code[1]
+	return codes[1]
 end

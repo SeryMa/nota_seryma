@@ -52,11 +52,11 @@
 			"y": -65
 		},
 		"FjQpiiAkfFDpe1kBcPaeMnWB4sOUr9bJ": {
-			"height": 172,
+			"height": 130,
 			"title": "ClearMid",
 			"width": 225,
-			"x": 805,
-			"y": 334
+			"x": 816,
+			"y": 294
 		},
 		"G8kJXWGbHL3wr64Pq0Y8cLlEzRveFiUa": {
 			"height": 60,
@@ -73,11 +73,11 @@
 			"y": 68
 		},
 		"NInQw7cFRVVCbXwLQRqje6VysSqhK9uD": {
-			"height": 172,
+			"height": 134,
 			"title": "ClearTop",
 			"width": 225,
-			"x": 803,
-			"y": 171
+			"x": 809,
+			"y": 409
 		},
 		"PXyKNGNW00WrdRVtYlTZUU62WKhIk5Dp": {
 			"height": 60,
@@ -136,11 +136,11 @@
 			"y": 203
 		},
 		"rZwfYQ86GcjZfYEyfSq8lcokWAu9PKK9": {
-			"height": 172,
+			"height": 130,
 			"title": "ClearMid",
-			"width": 225,
-			"x": 808,
-			"y": 498
+			"width": 230,
+			"x": 814,
+			"y": 177
 		},
 		"tclspI58EYeS5iNeEdBdwcvBzwLf9Ryo": {
 			"height": 60,
@@ -334,7 +334,7 @@
 		}, {
 			"children": [ {
 				"children": [],
-				"id": "NInQw7cFRVVCbXwLQRqje6VysSqhK9uD",
+				"id": "rZwfYQ86GcjZfYEyfSq8lcokWAu9PKK9",
 				"nodeType": "reference",
 				"parameters": [ {
 					"name": "behaviourName",
@@ -342,7 +342,7 @@
 				} ],
 				"referenceInputs": [ {
 					"name": "line",
-					"value": "\"Top\""
+					"value": "\"Bottom\""
 				} ],
 				"referenceOutputs": []
 			}, {
@@ -360,7 +360,7 @@
 				"referenceOutputs": []
 			}, {
 				"children": [],
-				"id": "rZwfYQ86GcjZfYEyfSq8lcokWAu9PKK9",
+				"id": "NInQw7cFRVVCbXwLQRqje6VysSqhK9uD",
 				"nodeType": "reference",
 				"parameters": [ {
 					"name": "behaviourName",
@@ -368,7 +368,7 @@
 				} ],
 				"referenceInputs": [ {
 					"name": "line",
-					"value": "\"Bottom\""
+					"value": "\"Top\""
 				} ],
 				"referenceOutputs": []
 			} ],

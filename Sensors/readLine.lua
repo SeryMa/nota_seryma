@@ -42,13 +42,30 @@ return function(line, currentInfo, debug)
 				ourLastStrong = lineInfo[i]
 				dangerZone = {}
 			else
-				intel.lastOurs = ourLastStrong
-				intel.firstTheir = lineInfo[i]
+				intel.lastOursStrong = ourLastStrong
+				intel.firstTheirStrong = lineInfo[i]
 				intel.dangerZone = dangerZone
+
+				intel.firstTheir = intel.firstTheirStrong
+				intel.lastOurs = intel.lastOursStrong
 				break
 			end
 		else
 			dangerZone[#dangerZone+1] = lineInfo[i]
+		end
+	end
+
+			
+	for i = 1, #dangerZone do
+		local HP = Sensors.HPInArea({center = dangerZone[i].position, radius = 500})
+		
+		if HP.allied > 0 and 1.5 * HP.allied > HP.enemy then
+			intel.lastOurs = dangerZone[i]
+			if i == #dangerZone then
+				intel.firstTheir = intel.firstTheirStrong
+			else
+				intel.firstTheir = dangerZone[i+1]
+			end
 		end
 	end
 	
@@ -81,17 +98,29 @@ return function(line, currentInfo, debug)
 				{ x=intel.lastOurs.position.x,
 				  y=intel.lastOurs.position.y,
 				  z=intel.lastOurs.position.z,
-				  radius=40,
+				  radius=500,
 				  r = 000,
-				  g = 000,
+				  g = 000, 	
 				  b = 200,
 				})
+
+		Script.LuaUI.circle_update(
+			offset-2,
+			{ x=intel.lastOursStrong.position.x,
+				y=intel.lastOursStrong.position.y,
+				z=intel.lastOursStrong.position.z,
+				radius=50,
+				r = 100,
+				g = 000,
+				b = 200,
+			})
+
 		Script.LuaUI.circle_update(
 				offset-1,
 				{ x=intel.firstTheir.position.x,
 				  y=intel.firstTheir.position.y,
 				  z=intel.firstTheir.position.z,
-				  radius=40,
+				  radius=50,
 				  r = 200,
 				  g = 000,
 				  b = 000,

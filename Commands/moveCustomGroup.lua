@@ -98,7 +98,7 @@ function Run(self, units, parameter)
 			if unitID == pointmanID then 
 				SpringGiveOrderToUnit(pointmanID, cmdID, pointmanWantedPosition:AsSpringVector(), {})
 			else
-				local thisUnitWantedPosition = pointmanPosition - pointmanOffset + formation[i]
+				local thisUnitWantedPosition = pointmanPosition - pointmanOffset + formation[1 + (i % #formation)]
 				SpringGiveOrderToUnit(unitID, cmdID, thisUnitWantedPosition:AsSpringVector(), {})
 			end
 		end
