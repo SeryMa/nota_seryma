@@ -273,6 +273,9 @@
 						}, {
 							"name": "formationName",
 							"value": "\"swarm\""
+						}, {
+							"name": "unitThreshold",
+							"value": "9"
 						} ],
 						"referenceOutputs": []
 					} ],
@@ -311,7 +314,7 @@
 						} ],
 						"referenceInputs": [ {
 							"name": "size",
-							"value": "30"
+							"value": "50"
 						}, {
 							"name": "targetPosition",
 							"value": "lineInfo.firstTheirStrong.position"

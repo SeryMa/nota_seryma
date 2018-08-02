@@ -27,14 +27,14 @@ return function(units)
 	local farks = #units.collectors
 
 	if infiltrators == 0 then return codes[3] end
-	if mavericks == 0 then return codes[1] end
+	if mavericks <= 3 then return codes[1] end
 	if farks == 0 then return codes[2] end
 
 	local all = mavericks + infiltrators + farks
 	
 	if 2 * mavericks <= all then return codes[1] end
 	if 6 * farks <= all then return codes[2] end
-	if infiltrators < 5 and 3 * infiltrators <= all then return codes[3] end
+	if infiltrators < 8 and 3 * infiltrators <= all then return codes[3] end
 
 	return codes[1]
 end

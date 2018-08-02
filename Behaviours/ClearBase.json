@@ -20,29 +20,36 @@
 			"height": 60,
 			"title": "MetalCollectors",
 			"width": 179,
-			"x": 1507,
-			"y": 792
+			"x": 1488,
+			"y": 1343
 		},
 		"7UxMwWip43LihoRfMy6prByiiaLjbTxn": {
 			"height": 101,
 			"title": "store",
 			"width": 371,
-			"x": 1846,
-			"y": -290
+			"x": 1852,
+			"y": -366
+		},
+		"95HvSvuuzKcsQMfSKSTigpsCvoADrge3": {
+			"height": 101,
+			"title": "store",
+			"width": 371,
+			"x": 1852,
+			"y": -284
 		},
 		"ANRmNUhYrJ2l880fW2rjxEwUc2PETBXN": {
 			"height": 172,
 			"title": "reference",
 			"width": 353,
-			"x": 1707,
-			"y": 930
+			"x": 1738,
+			"y": 296
 		},
 		"B0ySCHOi0XLm2AuybP9DzN07Ouk7mwyO": {
 			"height": 60,
 			"title": "Fighters Mid",
 			"width": 162,
-			"x": 1510,
-			"y": 363
+			"x": 1520,
+			"y": 513
 		},
 		"E9Vx1MFmg2ykmCL7GzfkRdTfzsLXjZxy": {
 			"height": 60,
@@ -51,40 +58,33 @@
 			"x": 685,
 			"y": 99
 		},
-		"EUQYXWCOBjI13mLrSpXhwd4JKs3wINPw": {
-			"height": 60,
-			"title": "Spies",
-			"width": 133,
-			"x": 1527,
-			"y": 942
-		},
 		"JNwiyclmoj3SZlD1sD8wbYfZUC17vPzm": {
 			"height": 92,
 			"title": "store",
 			"width": 141,
-			"x": 1686,
+			"x": 1687,
 			"y": -22
 		},
 		"Lj6cN8XFixNGVmosu4PQWKMHshRF9Rrq": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1659,
+			"x": 1660,
 			"y": -180
 		},
 		"NLfM81pZMSKuW4foh5LyDJ7fqm3nT71w": {
 			"height": 235,
 			"title": "Top",
 			"width": 478,
-			"x": 1715,
-			"y": 306
+			"x": 1724,
+			"y": 456
 		},
 		"Nv1ZHDEydbKX6u2h2v551mJH5I32AG0c": {
 			"height": 172,
 			"title": "Top",
 			"width": 298,
-			"x": 1709,
-			"y": 763
+			"x": 1689,
+			"y": 1314
 		},
 		"OyyaVY4ZcnYEUW4gzXD3MeQgbseK9eoe": {
 			"height": 60,
@@ -97,15 +97,15 @@
 			"height": 60,
 			"title": "Fighters Top",
 			"width": 162,
-			"x": 1519,
+			"x": 1520,
 			"y": 139
 		},
 		"RmB7AndeO5VWdTksU0O3aHWDXfy0se7t": {
 			"height": 235,
 			"title": "Top",
 			"width": 478,
-			"x": 1717,
-			"y": 534
+			"x": 1713,
+			"y": 870
 		},
 		"XCp06ikIO3gWXcIqj1ZlgN9pUxVmcQn5": {
 			"height": 95,
@@ -118,22 +118,36 @@
 			"height": 60,
 			"title": "Fighters Bot",
 			"width": 162,
-			"x": 1512,
-			"y": 591
+			"x": 1509,
+			"y": 927
 		},
 		"XscIZ6juqORxihUsregTO69BPxfqaS7j": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 1212,
+			"x": 1213,
 			"y": 96
+		},
+		"YFWZPWnvTCI7OABAIZ9hQh4jFmqVz5Z4": {
+			"height": 60,
+			"title": "Spies Mid",
+			"width": 162,
+			"x": 1506,
+			"y": 725
 		},
 		"YQtaXFHsbP8JeS503wT53hl6YpZ9MGK7": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1494,
+			"x": 1495,
 			"y": -84
+		},
+		"aDLtjMeaCM6XIJCdYzjEGzfXMtgYY2Qs": {
+			"height": 60,
+			"title": "Spies Top",
+			"width": 162,
+			"x": 1510,
+			"y": 336
 		},
 		"eYM8txAMS2ZJJEMnfecHLmmMpZWbaJNO": {
 			"height": 94,
@@ -142,12 +156,26 @@
 			"x": 2173,
 			"y": -198
 		},
+		"gpZ6XULFiAcxz2o8MJ74RkvfEWML4NXX": {
+			"height": 172,
+			"title": "reference",
+			"width": 353,
+			"x": 1723,
+			"y": 1104
+		},
 		"h4VSDuVKXzM5IB7Lncp81kLnoAgOP7ui": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
 			"x": 475,
 			"y": -86
+		},
+		"hcWet2861xjIOTnN13Y1acadrEZGY1IH": {
+			"height": 60,
+			"title": "Spies Bot",
+			"width": 162,
+			"x": 1495,
+			"y": 1144
 		},
 		"iqfLWJpPQIDPdVjVl51CePsQTvTSiNPm": {
 			"height": 72,
@@ -160,7 +188,7 @@
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 1497,
+			"x": 1498,
 			"y": -180
 		},
 		"kfEZONlaGlWjmXVs5CLtowX2AeX3BISn": {
@@ -184,12 +212,19 @@
 			"x": 685,
 			"y": -108
 		},
+		"r9WT9o3XdoTYwGsIQfGbuJ0k92MGbzr9": {
+			"height": 172,
+			"title": "reference",
+			"width": 353,
+			"x": 1734,
+			"y": 685
+		},
 		"wQTGMxfh3PL84Ob4Ag1LMuVSSzaJxxbO": {
 			"height": 235,
 			"title": "Top",
 			"width": 478,
-			"x": 1716,
-			"y": 78
+			"x": 1730,
+			"y": 77
 		},
 		"xGwTwD0nwGLbfuXTBajUVhVLCpZG941m": {
 			"height": 94,
@@ -297,6 +332,21 @@
 								} ],
 								"scriptName": "store"
 							}, {
+								"children": [],
+								"id": "95HvSvuuzKcsQMfSKSTigpsCvoADrge3",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "spiesDivided"
+								}, {
+									"name": "value",
+									"value": "nota_seryma.DivideUnits(bb.units.spies, 3)"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							}, {
 								"children": [ {
 									"children": [],
 									"id": "eYM8txAMS2ZJJEMnfecHLmmMpZWbaJNO",
@@ -394,10 +444,37 @@
 							}, {
 								"name": "formationName",
 								"value": "\"swarm\""
+							}, {
+								"name": "unitThreshold",
+								"value": "3"
 							} ],
 							"referenceOutputs": []
 						} ],
 						"id": "PPlz0EDjD0Y7fO5nr02q9IedqpZf2Gca",
+						"nodeType": "repeat",
+						"parameters": []
+					}, {
+						"children": [ {
+							"children": [],
+							"id": "ANRmNUhYrJ2l880fW2rjxEwUc2PETBXN",
+							"nodeType": "reference",
+							"parameters": [ {
+								"name": "behaviourName",
+								"value": "nota_seryma.MoveInFormation"
+							} ],
+							"referenceInputs": [ {
+								"name": "size",
+								"value": "50"
+							}, {
+								"name": "targetPosition",
+								"value": "StrongTop"
+							}, {
+								"name": "Units",
+								"value": "spiesDivided[1]"
+							} ],
+							"referenceOutputs": []
+						} ],
+						"id": "aDLtjMeaCM6XIJCdYzjEGzfXMtgYY2Qs",
 						"nodeType": "repeat",
 						"parameters": []
 					}, {
@@ -424,10 +501,37 @@
 							}, {
 								"name": "formationName",
 								"value": "\"swarm\""
+							}, {
+								"name": "unitThreshold",
+								"value": "3"
 							} ],
 							"referenceOutputs": []
 						} ],
 						"id": "B0ySCHOi0XLm2AuybP9DzN07Ouk7mwyO",
+						"nodeType": "repeat",
+						"parameters": []
+					}, {
+						"children": [ {
+							"children": [],
+							"id": "r9WT9o3XdoTYwGsIQfGbuJ0k92MGbzr9",
+							"nodeType": "reference",
+							"parameters": [ {
+								"name": "behaviourName",
+								"value": "nota_seryma.MoveInFormation"
+							} ],
+							"referenceInputs": [ {
+								"name": "size",
+								"value": "50"
+							}, {
+								"name": "targetPosition",
+								"value": "StrongMid"
+							}, {
+								"name": "Units",
+								"value": "spiesDivided[2]"
+							} ],
+							"referenceOutputs": []
+						} ],
+						"id": "YFWZPWnvTCI7OABAIZ9hQh4jFmqVz5Z4",
 						"nodeType": "repeat",
 						"parameters": []
 					}, {
@@ -454,10 +558,37 @@
 							}, {
 								"name": "formationName",
 								"value": "\"swarm\""
+							}, {
+								"name": "unitThreshold",
+								"value": "3"
 							} ],
 							"referenceOutputs": []
 						} ],
 						"id": "XE8WxJwzlTSWNpvxFjr9xTkOGzPpzRPp",
+						"nodeType": "repeat",
+						"parameters": []
+					}, {
+						"children": [ {
+							"children": [],
+							"id": "gpZ6XULFiAcxz2o8MJ74RkvfEWML4NXX",
+							"nodeType": "reference",
+							"parameters": [ {
+								"name": "behaviourName",
+								"value": "nota_seryma.MoveInFormation"
+							} ],
+							"referenceInputs": [ {
+								"name": "size",
+								"value": "50"
+							}, {
+								"name": "targetPosition",
+								"value": "StrongBot"
+							}, {
+								"name": "Units",
+								"value": "spiesDivided[3]"
+							} ],
+							"referenceOutputs": []
+						} ],
+						"id": "hcWet2861xjIOTnN13Y1acadrEZGY1IH",
 						"nodeType": "repeat",
 						"parameters": []
 					}, {
@@ -479,30 +610,6 @@
 							"referenceOutputs": []
 						} ],
 						"id": "1svViYelvjYrcrQAJ8awoGp3kfoh5lXd",
-						"nodeType": "repeat",
-						"parameters": []
-					}, {
-						"children": [ {
-							"children": [],
-							"id": "ANRmNUhYrJ2l880fW2rjxEwUc2PETBXN",
-							"nodeType": "reference",
-							"parameters": [ {
-								"name": "behaviourName",
-								"value": "nota_seryma.MoveInFormation"
-							} ],
-							"referenceInputs": [ {
-								"name": "size",
-								"value": "220"
-							}, {
-								"name": "targetPosition",
-								"value": "base"
-							}, {
-								"name": "Units",
-								"value": "bb.units.spies"
-							} ],
-							"referenceOutputs": []
-						} ],
-						"id": "EUQYXWCOBjI13mLrSpXhwd4JKs3wINPw",
 						"nodeType": "repeat",
 						"parameters": []
 					} ],

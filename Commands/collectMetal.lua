@@ -43,7 +43,7 @@ local function Collect(unit)
 
 	-- only issue the command if the command queue is empty
 	if Spring.GetCommandQueue(unit, 0) < 1 then	
-		SpringGiveOrderToUnit(unit,  CMD.RECLAIM, {collectingSpot.x, collectingSpot.y, collectingSpot.z, 0.5 * range}, {"shift"})		
+		SpringGiveOrderToUnit(unit,  CMD.RECLAIM, {collectingSpot.x, collectingSpot.y, collectingSpot.z, range}, {"shift"})		
 	end
 
 	-- local foreman = units[1]
