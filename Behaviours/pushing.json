@@ -606,7 +606,7 @@
 									"value": "relativeFormation"
 								}, {
 									"name": "fight",
-									"value": "true"
+									"value": "false"
 								}, {
 									"name": "scriptName",
 									"value": "nota_seryma.moveCustomGroup"

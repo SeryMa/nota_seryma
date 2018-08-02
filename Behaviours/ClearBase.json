@@ -1,5 +1,62 @@
 {
-	"additionalNodes": [],
+	"additionalNodes": [ {
+		"children": [ {
+			"children": [],
+			"id": "r9WT9o3XdoTYwGsIQfGbuJ0k92MGbzr9",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "nota_seryma.MoveInFormation"
+			} ],
+			"referenceInputs": [ {
+				"name": "size",
+				"value": "60"
+			}, {
+				"name": "targetPosition",
+				"value": "StrongMid"
+			}, {
+				"name": "Units",
+				"value": "spiesDivided[3]"
+			} ],
+			"referenceOutputs": []
+		} ],
+		"id": "YFWZPWnvTCI7OABAIZ9hQh4jFmqVz5Z4",
+		"nodeType": "repeat",
+		"parameters": []
+	}, {
+		"children": [ {
+			"children": [],
+			"id": "NLfM81pZMSKuW4foh5LyDJ7fqm3nT71w",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "nota_seryma.pushing"
+			} ],
+			"referenceInputs": [ {
+				"name": "Units",
+				"value": "fightersDivided[3]"
+			}, {
+				"name": "retreatPosition",
+				"value": "base"
+			}, {
+				"name": "attackPosition",
+				"value": "(base + StrongMid) /2"
+			}, {
+				"name": "targetPosition",
+				"value": "StrongMid"
+			}, {
+				"name": "formationName",
+				"value": "\"swarm\""
+			}, {
+				"name": "unitThreshold",
+				"value": "3"
+			} ],
+			"referenceOutputs": []
+		} ],
+		"id": "B0ySCHOi0XLm2AuybP9DzN07Ouk7mwyO",
+		"nodeType": "repeat",
+		"parameters": []
+	} ],
 	"additionalParameters": {
 		"root": {
 			"height": 103,
@@ -26,7 +83,7 @@
 		"7UxMwWip43LihoRfMy6prByiiaLjbTxn": {
 			"height": 101,
 			"title": "store",
-			"width": 371,
+			"width": 377,
 			"x": 1852,
 			"y": -366
 		},
@@ -325,7 +382,7 @@
 									"value": "fightersDivided"
 								}, {
 									"name": "value",
-									"value": "nota_seryma.DivideUnits(bb.units.fighters, 3)"
+									"value": "nota_seryma.DivideUnits(bb.units.fighters, 2)"
 								}, {
 									"name": "scriptName",
 									"value": "store"
@@ -340,7 +397,7 @@
 									"value": "spiesDivided"
 								}, {
 									"name": "value",
-									"value": "nota_seryma.DivideUnits(bb.units.spies, 3)"
+									"value": "nota_seryma.DivideUnits(bb.units.spies, 2)"
 								}, {
 									"name": "scriptName",
 									"value": "store"
@@ -464,7 +521,7 @@
 							} ],
 							"referenceInputs": [ {
 								"name": "size",
-								"value": "50"
+								"value": "100"
 							}, {
 								"name": "targetPosition",
 								"value": "StrongTop"
@@ -480,63 +537,6 @@
 					}, {
 						"children": [ {
 							"children": [],
-							"id": "NLfM81pZMSKuW4foh5LyDJ7fqm3nT71w",
-							"nodeType": "reference",
-							"parameters": [ {
-								"name": "behaviourName",
-								"value": "nota_seryma.pushing"
-							} ],
-							"referenceInputs": [ {
-								"name": "Units",
-								"value": "fightersDivided[2]"
-							}, {
-								"name": "retreatPosition",
-								"value": "base"
-							}, {
-								"name": "attackPosition",
-								"value": "(base + StrongMid) /2"
-							}, {
-								"name": "targetPosition",
-								"value": "StrongMid"
-							}, {
-								"name": "formationName",
-								"value": "\"swarm\""
-							}, {
-								"name": "unitThreshold",
-								"value": "3"
-							} ],
-							"referenceOutputs": []
-						} ],
-						"id": "B0ySCHOi0XLm2AuybP9DzN07Ouk7mwyO",
-						"nodeType": "repeat",
-						"parameters": []
-					}, {
-						"children": [ {
-							"children": [],
-							"id": "r9WT9o3XdoTYwGsIQfGbuJ0k92MGbzr9",
-							"nodeType": "reference",
-							"parameters": [ {
-								"name": "behaviourName",
-								"value": "nota_seryma.MoveInFormation"
-							} ],
-							"referenceInputs": [ {
-								"name": "size",
-								"value": "50"
-							}, {
-								"name": "targetPosition",
-								"value": "StrongMid"
-							}, {
-								"name": "Units",
-								"value": "spiesDivided[2]"
-							} ],
-							"referenceOutputs": []
-						} ],
-						"id": "YFWZPWnvTCI7OABAIZ9hQh4jFmqVz5Z4",
-						"nodeType": "repeat",
-						"parameters": []
-					}, {
-						"children": [ {
-							"children": [],
 							"id": "RmB7AndeO5VWdTksU0O3aHWDXfy0se7t",
 							"nodeType": "reference",
 							"parameters": [ {
@@ -545,7 +545,7 @@
 							} ],
 							"referenceInputs": [ {
 								"name": "Units",
-								"value": "fightersDivided[3]"
+								"value": "fightersDivided[2]"
 							}, {
 								"name": "retreatPosition",
 								"value": "base"
@@ -578,13 +578,13 @@
 							} ],
 							"referenceInputs": [ {
 								"name": "size",
-								"value": "50"
+								"value": "60"
 							}, {
 								"name": "targetPosition",
 								"value": "StrongBot"
 							}, {
 								"name": "Units",
-								"value": "spiesDivided[3]"
+								"value": "spiesDivided[2]"
 							} ],
 							"referenceOutputs": []
 						} ],
