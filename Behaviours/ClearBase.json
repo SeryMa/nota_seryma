@@ -84,21 +84,28 @@
 			"height": 101,
 			"title": "store",
 			"width": 377,
-			"x": 1852,
+			"x": 1853,
 			"y": -366
 		},
 		"95HvSvuuzKcsQMfSKSTigpsCvoADrge3": {
 			"height": 101,
 			"title": "store",
 			"width": 371,
-			"x": 1852,
+			"x": 1853,
 			"y": -284
+		},
+		"9Pp1ZraGKfLgVZHlRSOx2c5UsJSKWsCg": {
+			"height": 60,
+			"title": "Radars",
+			"width": 162,
+			"x": 1484,
+			"y": 1551
 		},
 		"ANRmNUhYrJ2l880fW2rjxEwUc2PETBXN": {
 			"height": 172,
 			"title": "reference",
 			"width": 353,
-			"x": 1738,
+			"x": 1739,
 			"y": 296
 		},
 		"B0ySCHOi0XLm2AuybP9DzN07Ouk7mwyO": {
@@ -115,11 +122,18 @@
 			"x": 685,
 			"y": 99
 		},
+		"GPr3u4ZGD0yqiC5qHV1fUuvkt480CAyH": {
+			"height": 172,
+			"title": "reference",
+			"width": 353,
+			"x": 1713,
+			"y": 1511
+		},
 		"JNwiyclmoj3SZlD1sD8wbYfZUC17vPzm": {
 			"height": 92,
 			"title": "store",
 			"width": 141,
-			"x": 1687,
+			"x": 1688,
 			"y": -22
 		},
 		"Lj6cN8XFixNGVmosu4PQWKMHshRF9Rrq": {
@@ -133,14 +147,14 @@
 			"height": 235,
 			"title": "Top",
 			"width": 478,
-			"x": 1724,
+			"x": 1725,
 			"y": 456
 		},
 		"Nv1ZHDEydbKX6u2h2v551mJH5I32AG0c": {
 			"height": 172,
 			"title": "Top",
 			"width": 298,
-			"x": 1689,
+			"x": 1690,
 			"y": 1314
 		},
 		"OyyaVY4ZcnYEUW4gzXD3MeQgbseK9eoe": {
@@ -161,14 +175,14 @@
 			"height": 235,
 			"title": "Top",
 			"width": 478,
-			"x": 1713,
+			"x": 1714,
 			"y": 870
 		},
 		"XCp06ikIO3gWXcIqj1ZlgN9pUxVmcQn5": {
 			"height": 95,
 			"title": "is cleared",
 			"width": 267,
-			"x": 1846,
+			"x": 1847,
 			"y": -193
 		},
 		"XE8WxJwzlTSWNpvxFjr9xTkOGzPpzRPp": {
@@ -217,7 +231,7 @@
 			"height": 172,
 			"title": "reference",
 			"width": 353,
-			"x": 1723,
+			"x": 1724,
 			"y": 1104
 		},
 		"h4VSDuVKXzM5IB7Lncp81kLnoAgOP7ui": {
@@ -252,7 +266,7 @@
 			"height": 72,
 			"title": "waitUntil",
 			"width": 181,
-			"x": 1692,
+			"x": 1693,
 			"y": -90
 		},
 		"oGdsrtHMm5f3pCOv1R7WgC59GUh44auM": {
@@ -273,14 +287,14 @@
 			"height": 172,
 			"title": "reference",
 			"width": 353,
-			"x": 1734,
+			"x": 1735,
 			"y": 685
 		},
 		"wQTGMxfh3PL84Ob4Ag1LMuVSSzaJxxbO": {
 			"height": 235,
 			"title": "Top",
 			"width": 478,
-			"x": 1730,
+			"x": 1731,
 			"y": 77
 		},
 		"xGwTwD0nwGLbfuXTBajUVhVLCpZG941m": {
@@ -610,6 +624,30 @@
 							"referenceOutputs": []
 						} ],
 						"id": "1svViYelvjYrcrQAJ8awoGp3kfoh5lXd",
+						"nodeType": "repeat",
+						"parameters": []
+					}, {
+						"children": [ {
+							"children": [],
+							"id": "GPr3u4ZGD0yqiC5qHV1fUuvkt480CAyH",
+							"nodeType": "reference",
+							"parameters": [ {
+								"name": "behaviourName",
+								"value": "nota_seryma.MoveInFormation"
+							} ],
+							"referenceInputs": [ {
+								"name": "size",
+								"value": "10"
+							}, {
+								"name": "targetPosition",
+								"value": "base"
+							}, {
+								"name": "Units",
+								"value": "bb.units.radars"
+							} ],
+							"referenceOutputs": []
+						} ],
+						"id": "9Pp1ZraGKfLgVZHlRSOx2c5UsJSKWsCg",
 						"nodeType": "repeat",
 						"parameters": []
 					} ],

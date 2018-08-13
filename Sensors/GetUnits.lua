@@ -22,6 +22,7 @@ local defaultCategorization = {
 	spies = {"armspy"},
 	artillery = {"armbox"},
 	transport = {"armatlas"},
+	radars = {"armseer"}
 }
 
 -- @description return safe spaces found on map

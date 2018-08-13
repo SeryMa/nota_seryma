@@ -103,6 +103,13 @@
 			"x": 1167,
 			"y": -55
 		},
+		"k7Tw24f2SVUiw9u1EIr01ptnJZbxE1px": {
+			"height": 60,
+			"title": "Spies",
+			"width": 133,
+			"x": 993,
+			"y": 626
+		},
 		"qAcKoY1RGLTOlK5iSnaD9T3cSfi61UL2": {
 			"height": 100,
 			"title": "is cleared",
@@ -116,6 +123,13 @@
 			"width": 267,
 			"x": 1328,
 			"y": -253
+		},
+		"rTFw6s6plPh8Q2rAyLkMo1df45rfMiSF": {
+			"height": 172,
+			"title": "reference",
+			"width": 353,
+			"x": 1174,
+			"y": 614
 		},
 		"vwhrijyrMx44S0FSarOISAOHRyCBM7eY": {
 			"height": 172,
@@ -325,6 +339,30 @@
 						"referenceOutputs": []
 					} ],
 					"id": "X8eIveOdFHUwS20taSLooSWKcmcyYjIa",
+					"nodeType": "repeat",
+					"parameters": []
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "rTFw6s6plPh8Q2rAyLkMo1df45rfMiSF",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_seryma.MoveInFormation"
+						} ],
+						"referenceInputs": [ {
+							"name": "size",
+							"value": "10"
+						}, {
+							"name": "targetPosition",
+							"value": "lineInfo.lastOursStrong.position"
+						}, {
+							"name": "Units",
+							"value": "bb.units.radars"
+						} ],
+						"referenceOutputs": []
+					} ],
+					"id": "k7Tw24f2SVUiw9u1EIr01ptnJZbxE1px",
 					"nodeType": "repeat",
 					"parameters": []
 				} ],
