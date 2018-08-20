@@ -2,6 +2,39 @@
 	"additionalNodes": [ {
 		"children": [ {
 			"children": [],
+			"id": "wQTGMxfh3PL84Ob4Ag1LMuVSSzaJxxbO",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "nota_seryma.pushing"
+			} ],
+			"referenceInputs": [ {
+				"name": "Units",
+				"value": "fightersDivided[1]"
+			}, {
+				"name": "retreatPosition",
+				"value": "base"
+			}, {
+				"name": "attackPosition",
+				"value": "(base + StrongTop) /2"
+			}, {
+				"name": "targetPosition",
+				"value": "StrongTop"
+			}, {
+				"name": "formationName",
+				"value": "\"swarm\""
+			}, {
+				"name": "unitThreshold",
+				"value": "3"
+			} ],
+			"referenceOutputs": []
+		} ],
+		"id": "PPlz0EDjD0Y7fO5nr02q9IedqpZf2Gca",
+		"nodeType": "repeat",
+		"parameters": []
+	}, {
+		"children": [ {
+			"children": [],
 			"id": "r9WT9o3XdoTYwGsIQfGbuJ0k92MGbzr9",
 			"nodeType": "reference",
 			"parameters": [ {
@@ -21,6 +54,39 @@
 			"referenceOutputs": []
 		} ],
 		"id": "YFWZPWnvTCI7OABAIZ9hQh4jFmqVz5Z4",
+		"nodeType": "repeat",
+		"parameters": []
+	}, {
+		"children": [ {
+			"children": [],
+			"id": "RmB7AndeO5VWdTksU0O3aHWDXfy0se7t",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "nota_seryma.pushing"
+			} ],
+			"referenceInputs": [ {
+				"name": "Units",
+				"value": "fightersDivided[2]"
+			}, {
+				"name": "retreatPosition",
+				"value": "base"
+			}, {
+				"name": "attackPosition",
+				"value": "(base + StrongBot) /2"
+			}, {
+				"name": "targetPosition",
+				"value": "StrongBot"
+			}, {
+				"name": "formationName",
+				"value": "\"swarm\""
+			}, {
+				"name": "unitThreshold",
+				"value": "3"
+			} ],
+			"referenceOutputs": []
+		} ],
+		"id": "XE8WxJwzlTSWNpvxFjr9xTkOGzPpzRPp",
 		"nodeType": "repeat",
 		"parameters": []
 	}, {
@@ -77,239 +143,253 @@
 			"height": 60,
 			"title": "MetalCollectors",
 			"width": 179,
-			"x": 1488,
-			"y": 1343
+			"x": 1459,
+			"y": 1507
 		},
 		"7UxMwWip43LihoRfMy6prByiiaLjbTxn": {
 			"height": 101,
 			"title": "store",
 			"width": 377,
-			"x": 1853,
-			"y": -366
+			"x": 1819,
+			"y": -287
 		},
 		"95HvSvuuzKcsQMfSKSTigpsCvoADrge3": {
 			"height": 101,
 			"title": "store",
 			"width": 371,
-			"x": 1853,
-			"y": -284
+			"x": 1819,
+			"y": -205
 		},
 		"9Pp1ZraGKfLgVZHlRSOx2c5UsJSKWsCg": {
 			"height": 60,
 			"title": "Radars",
 			"width": 162,
-			"x": 1484,
-			"y": 1551
+			"x": 1455,
+			"y": 1715
 		},
 		"ANRmNUhYrJ2l880fW2rjxEwUc2PETBXN": {
 			"height": 172,
 			"title": "reference",
 			"width": 353,
-			"x": 1739,
-			"y": 296
+			"x": 1710,
+			"y": 460
 		},
 		"B0ySCHOi0XLm2AuybP9DzN07Ouk7mwyO": {
 			"height": 60,
 			"title": "Fighters Mid",
 			"width": 162,
-			"x": 1520,
-			"y": 513
+			"x": 1492,
+			"y": 572
 		},
 		"E9Vx1MFmg2ykmCL7GzfkRdTfzsLXjZxy": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 685,
-			"y": 99
+			"x": 668,
+			"y": 149
 		},
 		"GPr3u4ZGD0yqiC5qHV1fUuvkt480CAyH": {
 			"height": 172,
 			"title": "reference",
 			"width": 353,
-			"x": 1713,
-			"y": 1511
+			"x": 1684,
+			"y": 1675
 		},
 		"JNwiyclmoj3SZlD1sD8wbYfZUC17vPzm": {
 			"height": 92,
 			"title": "store",
 			"width": 141,
-			"x": 1688,
-			"y": -22
+			"x": 1664,
+			"y": 48
 		},
 		"Lj6cN8XFixNGVmosu4PQWKMHshRF9Rrq": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1660,
-			"y": -180
+			"x": 1626,
+			"y": -101
 		},
 		"NLfM81pZMSKuW4foh5LyDJ7fqm3nT71w": {
 			"height": 235,
 			"title": "Top",
 			"width": 478,
-			"x": 1725,
-			"y": 456
+			"x": 1697,
+			"y": 515
 		},
 		"Nv1ZHDEydbKX6u2h2v551mJH5I32AG0c": {
 			"height": 172,
 			"title": "Top",
 			"width": 298,
-			"x": 1690,
-			"y": 1314
+			"x": 1661,
+			"y": 1478
 		},
 		"OyyaVY4ZcnYEUW4gzXD3MeQgbseK9eoe": {
 			"height": 60,
 			"title": "readIntel",
 			"width": 143,
-			"x": 496,
-			"y": 15
+			"x": 473,
+			"y": 91
 		},
 		"PPlz0EDjD0Y7fO5nr02q9IedqpZf2Gca": {
 			"height": 60,
 			"title": "Fighters Top",
 			"width": 162,
-			"x": 1520,
-			"y": 139
+			"x": 1491,
+			"y": 303
 		},
 		"RmB7AndeO5VWdTksU0O3aHWDXfy0se7t": {
 			"height": 235,
 			"title": "Top",
 			"width": 478,
-			"x": 1714,
-			"y": 870
+			"x": 1685,
+			"y": 1034
+		},
+		"Wb93v9uxY09HnWbad34v5Y5XP7EJyjye": {
+			"height": 60,
+			"title": "Fighters Top",
+			"width": 162,
+			"x": 1475,
+			"y": 178
 		},
 		"XCp06ikIO3gWXcIqj1ZlgN9pUxVmcQn5": {
 			"height": 95,
 			"title": "is cleared",
 			"width": 267,
-			"x": 1847,
-			"y": -193
+			"x": 1813,
+			"y": -114
 		},
 		"XE8WxJwzlTSWNpvxFjr9xTkOGzPpzRPp": {
 			"height": 60,
 			"title": "Fighters Bot",
 			"width": 162,
-			"x": 1509,
-			"y": 927
+			"x": 1480,
+			"y": 1091
 		},
 		"XscIZ6juqORxihUsregTO69BPxfqaS7j": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 1213,
-			"y": 96
+			"x": 1182,
+			"y": 135
 		},
 		"YFWZPWnvTCI7OABAIZ9hQh4jFmqVz5Z4": {
 			"height": 60,
 			"title": "Spies Mid",
 			"width": 162,
-			"x": 1506,
-			"y": 725
+			"x": 1452,
+			"y": 794
 		},
 		"YQtaXFHsbP8JeS503wT53hl6YpZ9MGK7": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1495,
-			"y": -84
+			"x": 1471,
+			"y": -14
 		},
 		"aDLtjMeaCM6XIJCdYzjEGzfXMtgYY2Qs": {
 			"height": 60,
 			"title": "Spies Top",
 			"width": 162,
-			"x": 1510,
-			"y": 336
+			"x": 1481,
+			"y": 500
+		},
+		"aVfNVQGjY6rppvZGqyqv7ap2cHlinWmN": {
+			"height": 172,
+			"title": "reference",
+			"width": 353,
+			"x": 1755,
+			"y": 141
 		},
 		"eYM8txAMS2ZJJEMnfecHLmmMpZWbaJNO": {
 			"height": 94,
 			"title": "store",
 			"width": 138,
-			"x": 2173,
-			"y": -198
+			"x": 2139,
+			"y": -119
 		},
 		"gpZ6XULFiAcxz2o8MJ74RkvfEWML4NXX": {
 			"height": 172,
 			"title": "reference",
 			"width": 353,
-			"x": 1724,
-			"y": 1104
+			"x": 1695,
+			"y": 1268
 		},
 		"h4VSDuVKXzM5IB7Lncp81kLnoAgOP7ui": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 475,
+			"x": 476,
 			"y": -86
 		},
 		"hcWet2861xjIOTnN13Y1acadrEZGY1IH": {
 			"height": 60,
 			"title": "Spies Bot",
 			"width": 162,
-			"x": 1495,
-			"y": 1144
+			"x": 1466,
+			"y": 1308
 		},
 		"iqfLWJpPQIDPdVjVl51CePsQTvTSiNPm": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 2171,
-			"y": -109
+			"x": 2137,
+			"y": -30
 		},
 		"jTceigyieIrKDv9jqaHlz8ex8eHrTumx": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 1498,
-			"y": -180
+			"x": 1464,
+			"y": -101
 		},
 		"kfEZONlaGlWjmXVs5CLtowX2AeX3BISn": {
 			"height": 72,
 			"title": "waitUntil",
 			"width": 181,
-			"x": 1693,
-			"y": -90
+			"x": 1669,
+			"y": -20
 		},
 		"oGdsrtHMm5f3pCOv1R7WgC59GUh44auM": {
 			"height": 94,
 			"title": "store",
 			"width": 657,
-			"x": 680,
-			"y": -26
+			"x": 663,
+			"y": -85
 		},
 		"qMlQ8vn5r3tZbKSsNazb9w8ky3AGjate": {
 			"height": 94,
 			"title": "store",
 			"width": 647,
-			"x": 685,
-			"y": -108
+			"x": 668,
+			"y": -167
 		},
 		"r9WT9o3XdoTYwGsIQfGbuJ0k92MGbzr9": {
 			"height": 172,
 			"title": "reference",
 			"width": 353,
-			"x": 1735,
-			"y": 685
+			"x": 1681,
+			"y": 754
 		},
 		"wQTGMxfh3PL84Ob4Ag1LMuVSSzaJxxbO": {
 			"height": 235,
 			"title": "Top",
 			"width": 478,
-			"x": 1731,
-			"y": 77
+			"x": 1702,
+			"y": 241
 		},
 		"xGwTwD0nwGLbfuXTBajUVhVLCpZG941m": {
 			"height": 94,
 			"title": "store",
 			"width": 613,
-			"x": 683,
-			"y": -195
+			"x": 666,
+			"y": -254
 		},
 		"zQ7LtutTO5Pj7omQqqeZ61t6XGqwr6oF": {
 			"height": 94,
 			"title": "store",
 			"width": 600,
-			"x": 684,
-			"y": -284
+			"x": 667,
+			"y": -343
 		}
 	},
 	"roles": [ {
@@ -494,34 +574,25 @@
 					}, {
 						"children": [ {
 							"children": [],
-							"id": "wQTGMxfh3PL84Ob4Ag1LMuVSSzaJxxbO",
+							"id": "aVfNVQGjY6rppvZGqyqv7ap2cHlinWmN",
 							"nodeType": "reference",
 							"parameters": [ {
 								"name": "behaviourName",
-								"value": "nota_seryma.pushing"
+								"value": "nota_seryma.MoveInFormation"
 							} ],
 							"referenceInputs": [ {
-								"name": "Units",
-								"value": "fightersDivided[1]"
-							}, {
-								"name": "retreatPosition",
-								"value": "base"
-							}, {
-								"name": "attackPosition",
-								"value": "(base + StrongTop) /2"
+								"name": "size",
+								"value": "70"
 							}, {
 								"name": "targetPosition",
-								"value": "StrongTop"
+								"value": "base"
 							}, {
-								"name": "formationName",
-								"value": "\"swarm\""
-							}, {
-								"name": "unitThreshold",
-								"value": "3"
+								"name": "Units",
+								"value": "bb.units.fighters"
 							} ],
 							"referenceOutputs": []
 						} ],
-						"id": "PPlz0EDjD0Y7fO5nr02q9IedqpZf2Gca",
+						"id": "Wb93v9uxY09HnWbad34v5Y5XP7EJyjye",
 						"nodeType": "repeat",
 						"parameters": []
 					}, {
@@ -546,39 +617,6 @@
 							"referenceOutputs": []
 						} ],
 						"id": "aDLtjMeaCM6XIJCdYzjEGzfXMtgYY2Qs",
-						"nodeType": "repeat",
-						"parameters": []
-					}, {
-						"children": [ {
-							"children": [],
-							"id": "RmB7AndeO5VWdTksU0O3aHWDXfy0se7t",
-							"nodeType": "reference",
-							"parameters": [ {
-								"name": "behaviourName",
-								"value": "nota_seryma.pushing"
-							} ],
-							"referenceInputs": [ {
-								"name": "Units",
-								"value": "fightersDivided[2]"
-							}, {
-								"name": "retreatPosition",
-								"value": "base"
-							}, {
-								"name": "attackPosition",
-								"value": "(base + StrongBot) /2"
-							}, {
-								"name": "targetPosition",
-								"value": "StrongBot"
-							}, {
-								"name": "formationName",
-								"value": "\"swarm\""
-							}, {
-								"name": "unitThreshold",
-								"value": "3"
-							} ],
-							"referenceOutputs": []
-						} ],
-						"id": "XE8WxJwzlTSWNpvxFjr9xTkOGzPpzRPp",
 						"nodeType": "repeat",
 						"parameters": []
 					}, {

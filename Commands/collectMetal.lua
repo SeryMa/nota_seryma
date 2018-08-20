@@ -32,8 +32,12 @@ local GetUnitPosition = Spring.GetUnitPosition
 local SpringGetUnitsInArea = Spring.GetUnitsInCylinder
 local SpringGetUnitDefID = Spring.GetUnitDefID
 local SpringGetUnitCommands = Spring.GetUnitCommands
+local isDead = Spring.GetUnitIsDead
 
 local function getRange(unit)
+	if SpringGetUnitDefID(unit) == nil then return 0 end
+	if UnitDefs[SpringGetUnitDefID(unit)] == nil then return 0 end
+	
 	return UnitDefs[SpringGetUnitDefID(unit)].losRadius
 end
 
@@ -117,7 +121,7 @@ function Run(self, units, parameter)
 	for i = 1, #units do
 		local unit = units[i]
 
-		if unit ~= nil then  
+		if unit ~= nil and not isDead(unit) then  
 			local pos = Vec3(GetUnitPosition(unit))
 			local safePoint = getClosest(pos, parameter.safePoints)
 

@@ -1,5 +1,31 @@
 {
-	"additionalNodes": [],
+	"additionalNodes": [ {
+		"children": [],
+		"id": "NInQw7cFRVVCbXwLQRqje6VysSqhK9uD",
+		"nodeType": "reference",
+		"parameters": [ {
+			"name": "behaviourName",
+			"value": "nota_seryma.ClearLine"
+		} ],
+		"referenceInputs": [ {
+			"name": "line",
+			"value": "\"Top\""
+		} ],
+		"referenceOutputs": []
+	}, {
+		"children": [],
+		"id": "rZwfYQ86GcjZfYEyfSq8lcokWAu9PKK9",
+		"nodeType": "reference",
+		"parameters": [ {
+			"name": "behaviourName",
+			"value": "nota_seryma.ClearLine"
+		} ],
+		"referenceInputs": [ {
+			"name": "line",
+			"value": "\"Bottom\""
+		} ],
+		"referenceOutputs": []
+	} ],
 	"additionalParameters": {
 		"root": {
 			"height": 148,
@@ -83,8 +109,8 @@
 			"height": 134,
 			"title": "ClearTop",
 			"width": 225,
-			"x": 823,
-			"y": 428
+			"x": 1036,
+			"y": 188
 		},
 		"PXyKNGNW00WrdRVtYlTZUU62WKhIk5Dp": {
 			"height": 60,
@@ -146,8 +172,8 @@
 			"height": 130,
 			"title": "ClearMid",
 			"width": 230,
-			"x": 825,
-			"y": 576
+			"x": 1256,
+			"y": 190
 		},
 		"tclspI58EYeS5iNeEdBdwcvBzwLf9Ryo": {
 			"height": 60,
@@ -361,32 +387,6 @@
 					"value": "nota_seryma.ClearBase"
 				} ],
 				"referenceInputs": [],
-				"referenceOutputs": []
-			}, {
-				"children": [],
-				"id": "NInQw7cFRVVCbXwLQRqje6VysSqhK9uD",
-				"nodeType": "reference",
-				"parameters": [ {
-					"name": "behaviourName",
-					"value": "nota_seryma.ClearLine"
-				} ],
-				"referenceInputs": [ {
-					"name": "line",
-					"value": "\"Top\""
-				} ],
-				"referenceOutputs": []
-			}, {
-				"children": [],
-				"id": "rZwfYQ86GcjZfYEyfSq8lcokWAu9PKK9",
-				"nodeType": "reference",
-				"parameters": [ {
-					"name": "behaviourName",
-					"value": "nota_seryma.ClearLine"
-				} ],
-				"referenceInputs": [ {
-					"name": "line",
-					"value": "\"Bottom\""
-				} ],
 				"referenceOutputs": []
 			} ],
 			"id": "rJjr4JZjQS7iVBeyGkO7wm5hN2ggSJ6z",

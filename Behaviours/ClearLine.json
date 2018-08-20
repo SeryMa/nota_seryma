@@ -183,7 +183,7 @@
 								"value": "lineInfo"
 							}, {
 								"name": "value",
-								"value": "nota_seryma.readLine(line, bb.missionInfo, true)"
+								"value": "nota_seryma.readLine(line, bb.missionInfo)"
 							}, {
 								"name": "scriptName",
 								"value": "store"
@@ -289,7 +289,7 @@
 							"value": "\"swarm\""
 						}, {
 							"name": "unitThreshold",
-							"value": "9"
+							"value": "12"
 						} ],
 						"referenceOutputs": []
 					} ],
